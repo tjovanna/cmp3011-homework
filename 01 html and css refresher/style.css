@@ -359,6 +359,10 @@ footer a {
 	width: 80%;
 	margin: 0 auto;
 }
+.furtherPosts h2 {
+	margin: 1em 1em;
+	padding: 0.5em 0em;
+}
 .furtherPosts h3 {
 	text-align: center;
 }
