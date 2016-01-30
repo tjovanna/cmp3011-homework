@@ -76,9 +76,6 @@ nav .logo a span {
 	font-weight: 100;
 	z-index: 10;
 }
-/*#stylelogo {
-	width:;
-}*/
 .logo .b {
 	background-color: #fff;
 }
@@ -133,9 +130,24 @@ h1{
 	line-height: 1em;
 	margin: auto;
 	clear: both;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+section h1 {
+	font-size: 1.875em;
+	text-transform: none;
+	margin-bottom: 0;
+	padding: 1em;
+	text-align: center;
+	font-weight: 100;
+}
+.maintext {
+	width: 80%;
+	margin: 0 auto;
+}
+.maintext img {
+	margin: 0 3.5em;
 }
 #hero h1 {
-	font-family: Georgia, Times, 'Times New Roman', serif;
 	font-weight: 500;
 	position: relative;
 	letter-spacing: .1em;
@@ -168,6 +180,11 @@ p {
 	text-align: center;
 	font-family: Georgia, Times, 'Times New Roman', serif;
 }
+.maintext p {
+	width: 70%;
+	margin: 0 auto;
+	text-align: left;
+}
 .Searchdiv {
 	margin: 0 auto;
 	width: 19%;
@@ -191,13 +208,46 @@ input {
 	line-height: 1.5em;
 	text-align: left;
 }
+.textContainer {
+	background: #fff;
+	margin: 0px;
+	width: 100%;
+	position: relative;
+	border-top: 1px solid #000;
+}
+.textContainer section {
+	border-left: solid 1px #000;
+	border-right: solid 1px #000;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 40px 5%;
+	width: 80%;
+}
+.textContainer section:first-child {
+	border-top: none;
+	padding: 30px 0 0;
+}
+.SubNav {
+	padding: 10px 25px;
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: solid 1px #000;
+}
+.SubNav li {
+	display: inline-block;
+	position: relative;
+	font-size: 0.8125em;
+}
+.SubNav li a {
+	padding: 0px 0;
+}
 #mainpost {
 	background-image: url(colorlessdrawing.jpg);
 	width: 66.66%;
 	height: 32em;
 	clear: both;
 	float: left;
-
 }
 h2 {
 	margin: 1em 2.5em;
@@ -236,13 +286,16 @@ h3 {
 	margin: 2em 5em;
 	text-align: left;
 	font-size: 0.8125em;
-	width: 76%;
+	width: 75%;
 }
 .morepost a {
 	margin: 1.5em 20em;
     font-size: 0.815em;
     display: inline-block;
     width: 15em;
+}
+#post2 img, #post3 img, #post4 img, #post5 img {
+	height: 200px;
 }
 #post2 {
 	background: #5ec5be;
@@ -251,13 +304,13 @@ h3 {
 	margin: 0 10em;
 }
 #post3 img {
-	margin: 0 5em;
+	margin: 0 8.5em;
 }
 #post4 {
 	background: #ff5b3f;
 }
 #post4 img {
-	margin: 0 3em;
+	margin: 0 4em;
 }
 #post5 img {
 	margin: 0 4.5em;
@@ -265,14 +318,15 @@ h3 {
 #post5, #post3 {
 	background: #deddda;
 }
-#post2 img, #post3 img, #post4 img, #post5 img {
-	height: 200px;
-}
+
 footer {
 	background: #000;
 	position: relative;
 	margin-top: 66em;
 	padding: 15px 0px 20px;
+}
+.subpage {
+	margin-top: 3em
 }
 h4 {
 	color: #ff5b3f;
@@ -291,4 +345,38 @@ footer a {
 	font-size: 0.75em;
 	font-family: Arial, sans-serif;
 	font-weight: 100;
+}
+.furtherPosts {
+	width: 70%;
+	background: #fff;
+	height: 50em;
+	margin: 0 auto;
+}
+.furtherPosts p {
+	font-size: 0.8125em;
+	text-align: left;
+	width: 80%;
+	margin: 0 auto;
+}
+.furtherPosts h3 {
+	text-align: center;
+}
+.furtherPosts img {
+	width: 200px;
+	margin: 0 4em;
+}
+.furtherPosts a {
+	padding: 0 1em;
+	margin: 0 2em;
+}
+#moreimg1, #moreimg2 {
+	padding: 1em 0;
+}
+#moreimg3 {
+	width: 250px;
+	margin: 2em 2em;
+}
+.readmore {
+	width: 33.33%;
+	float: left;
 }
