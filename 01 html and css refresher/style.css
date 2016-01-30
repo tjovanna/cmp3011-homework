@@ -349,7 +349,7 @@ footer a {
 }
 .furtherPosts {
 	width: 70%;
-	background: #fff;
+	background: #282525;
 	height: 50em;
 	margin: 0 auto;
 }
@@ -381,4 +381,16 @@ footer a {
 .readmore {
 	width: 33.33%;
 	float: left;
+}
+#smallpost1{
+	background: #ff5b3f;
+	height: 45em;
+}
+#smallpost2 {
+	background: #fff;
+	height: 45em;
+}
+#smallpost3 {
+	background: #5ec5be;
+	height: 45em;
 }
