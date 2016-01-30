@@ -7,20 +7,7 @@
 </head>
 <body>
 	<header>
-<!-- Code copied from actual website
 	<nav>
-      <div class="containerNav">
-	      <div id="stylelogo">
-	      <div class="logo">
-	      	<a href="/index.html"><span>Haruki Murakami</span>
-		          <span class="b bl"></span>
-		          <span class="b br"></span>
-		          <span class="b bl gap"></span>
-		          <span class="b br gap"></span>
-		          <span class="b bb"></span>
-	           </a>
-	      </div>
-      </div>
   		<ul style="height: auto;">
   			<li>
   				<a class="nav-author" href="/author">Author</a>
@@ -28,6 +15,19 @@
   			<li>
   				<a class="nav-library" href="/library">Library</a>
   			</li>
+  			    <div class="container containerNav">
+				    <div id="stylelogo">
+					    <div class="logo">
+					      	<a href="#"><span>Haruki Murakami</span>
+						          <span class="b bl"></span>
+						          <span class="b br"></span>
+						          <span class="b bl gap"></span>
+						          <span class="b br gap"></span>
+						          <span class="b bb"></span>
+					           </a>
+					     </div>
+			     	 </div>
+		     	 </div>
   			<li class="spacer">
   				<a class="nav-community" href="/community">Community</a>
   			</li>
@@ -35,112 +35,94 @@
   				<a class="nav-resources" href="/resources">Resources</a>
   			</li>
         </ul>
-    
-  	</nav> -->
-		<nav>
-			<a href="#">Author</a>
-			<a href="#">Library</a>
-			<a href="/index.html"><span>Haruki Murakami</span>
-		          <span class="b bl"></span>
-		          <span class="b br"></span>
-		          <span class="b bl gap"></span>
-		          <span class="b br gap"></span>
-		          <span class="b bb"></span>
-	           </a>
-			<a href="#">Community</a>
-			<a href="#">Resources</a>
-		</nav>
-		<div id="hero">
-			<h1>BLOG</h1>
-		</div>
 	</header>
+	<div id="hero">
+			<div class="outerCenter">
+				<div class="innerCenter">
+					<div class="container" data-delay="1">				
+						<h1 class="underline">
+							<stagger staggertxt="Blog" class="ng-scope">
+								<div style="position:relative;display:inline-block;">
+									<div style="position: relative; display: inline-block; opacity: 1;">B</div>
+									<div style="position: relative; display: inline-block; opacity: 1;">L</div>
+									<div style="position: relative; display: inline-block; opacity: 1;">O</div>
+									<div style="position: relative; display: inline-block; opacity: 1;">G</div>
+								</div>
+							</stagger>
+							<stagger staggertxt="">
+								<div style="position:relative;display:inline-block;"></div>
+							</stagger>
+						</h1> 
+							<div class="sub aniAlpha ng-binding" ng-bind-html="postdata.post.acf.subhead" style="visibility: inherit; opacity: 1;"><p>Delve into the world of Murakami in even greater detail</p>
+							</div>     
+					</div>
+				</div>
+			</div>		
+		</div>
 	<div id="wrapper">
-		<section>
-			<h2>This is the Blog Post title</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.
-				</p>
-					<a href="#">read more</a>
-		</section>
-		<section>
-			<img src="http://placekitten.com/150/300">
-				<h3>This is the Blog Post title</h3>
-						<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
-					</p>
-					<a href="#">read more</a>
-		</section>
-		<section>
-			<img src="http://placekitten.com/150/300">
-				<h3>This is the Blog Post title</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
-					</p>
-					<a href="#">read more</a>
-		</section>
-		<section>
-			<img src="http://placekitten.com/150/300">
-				<h3>This is the Blog Post title</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
-					</p>
-						<a href="#">read more</a>
-		</section>
-		<section>
-			<img src="http://placekitten.com/150/300">
-				<h3>This is the Blog Post title</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
-					</p>
-					<a href="#">read more</a>
-		</section>
-		<section>
-			<img src="http://placekitten.com/150/300">
-				<h3>This is the Blog Post title</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
-					</p>
-						<a href="#">read more</a>
-		</section>
-		<section>
-			<img src="http://placekitten.com/150/300">
-				<h3>This is the Blog Post title</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
-					</p>
-						<a href="#">read more</a>
-		</section>
-
-	</div>
 	<div class="Searchdiv">
 		<form>
 			<input type="text" placeholder="Search..." required>
 			<input type="button" value="Search">
 		</form>
 	</div>
+		<section id="mainpost">
+			<h2>This is the Blog Post title</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+					<a href="#">read more...</a>
+				</p>
+		</section>
+		<section class="morepost" id="post2">
+			<h3>This is the Blog Post title</h3>
+				<img src="anotherportrait.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+						<a href="#">read more...</a>
+					</p>			
+		</section>
+		<section class="morepost" id="post3">
+			<h3>This is the Blog Post title</h3>
+				<img src="dancedance.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+						<a href="#">read more...</a>
+					</p>
+		</section>
+		<section class="morepost" id="post4">
+			<h3>This is the Blog Post title</h3>
+				<img src="paintedportrait.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+						<a href="#">read more...</a>
+					</p>
+		</section>
+		<section class="morepost" id="post5">
+			<h3>This is the Blog Post title</h3>
+				<img src="booksinbag.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.
+						<a href="#">read more...</a>
+					</p>
+		</section>
+	</div>
 	<footer>
-		<h5>Contact</h5>
+		<h4>Contact</h4>
 			<div class="address ng-binding" ng-bind-html="siteVars.footer_address">
 				<p>
 					<a href="http://knopfdoubleday.com/imprint/knopf/" target="_blank">Alfred A. Knopf </a>
