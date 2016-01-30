@@ -368,7 +368,8 @@ footer a {
 }
 .furtherPosts a {
 	padding: 0 1em;
-	margin: 0 2em;
+	margin: 1em 2em;
+    display: inline-block;
 }
 #moreimg1, #moreimg2 {
 	padding: 1em 0;
