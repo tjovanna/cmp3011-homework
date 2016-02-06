@@ -28,6 +28,7 @@ nav {
 	overflow: visible;
 	zoom: 1;
 }
+/*border color transition*/
 a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -41,6 +42,7 @@ a {
 a:hover {
 	border-color: #fff;
 }
+/*red border, letter spacing & font size transition*/
 nav a {
 	color: #fff;
 	-webkit-transition: all 0.5s ease;
@@ -86,6 +88,7 @@ nav .logo a {
 	display: block;
 	height: 100%; 
 }
+/*text color transition*/
 nav .logo .home {
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all  0.5s ease;
@@ -270,6 +273,7 @@ input {
 .SubNav li a {
 	padding: 0px 0;
 }
+/*skew transform + transition*/
 #mainpost {
 	background-image: url(colorlessdrawing.jpg);
 	width: 66.66%;
@@ -308,6 +312,8 @@ h3 {
 #mainpost p, #mainpost a, h2 {
 	color: #fff;
 }
+
+/*expanding letter spacing transition*/
 .read {
 	-webkit-transition: letter-spacing 0.5s ease;
 	-moz-transition: letter-spacing 0.5s ease;
@@ -397,6 +403,8 @@ h4 {
 	font-size: 0.7em;
 	padding: 1em;
 }
+
+/*link color transition*/
 footer a {
 	color: #fff;
 	position: relative;
