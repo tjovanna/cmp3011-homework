@@ -31,7 +31,7 @@ nav {
 a {
 	text-decoration: none;
 	text-transform: uppercase;
-	border-bottom: 1px solid transparent;
+	border: 1px solid transparent;
 	color: #282525;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
@@ -43,23 +43,16 @@ a:hover {
 }
 nav a {
 	color: #fff;
-	-webkit-transition: border-color 1s ease;
-	-moz-transition: border-color 1s ease;
-	-o-transition:  border-color1s ease;
-	transition: border-color 1s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all  0.5s ease;
+	-o-transition:  all 0.5s ease;
+	transition: all 0.5s ease;
 }
 nav a:hover {
 	border-color: #ff5b3f;
+	letter-spacing: 4px;
+	font-size: 1.25em;
 }
-nav .logo a {
-	width: 100%;
-	max-width: 420px;
-	margin: 0 auto;
-	position: relative;
-	display: block;
-	height: 100%; 
-}
-
 ul {
 	list-style: none;
 }
@@ -85,20 +78,29 @@ nav .logo {
 	line-height: 2em;
     width: 28.7%;
 }
+nav .logo a {
+	width: 100%;
+	max-width: 420px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	height: 100%; 
+}
+nav .logo .home {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all  0.5s ease;
+	-o-transition:  all 0.5s ease;
+	transition: all 0.5s ease;
+}
+nav .logo .home:hover {
+	border: none;
+	color: #ff5b3f;
+	font-size: 1em;
+}
 
 nav .logo a span {
 	font-weight: 100;
 	z-index: 10;
-}
-.read {
-	letter-spacing: 2px;
-	-webkit-transition: letter-spacing 1s ease;
-	-moz-transition: letter-spacing 1s ease;
-	-o-transition: letter-spacing 1s ease;
-	transition: letter-spacing 1s ease;
-}
-.read:hover {
-	letter-spacing: 5px;
 }
 .logo .b {
 	background-color: #fff;
@@ -274,16 +276,16 @@ input {
 	height: 32em;
 	clear: both;
 	float: left;
-	-webkit-transition: transform 1s ease;
-	-moz-transition: transform 1s ease;
-	-o-transition: transform 1s ease;
-	transition: transform 1s ease;
+	-webkit-transition: transform 1s linear;
+	-moz-transition: transform 1s linear;
+	-o-transition: transform 1s linear;
+	transition: transform 1s linear;
 }
 #mainpost:hover {
-	-webkit-transform: translate(10px, -10px);
-	-moz-transform: translate(10px, -10px);
-	-o-transform: translate(10px, -10px);
-	transform: translate(10px, -10px);
+	-webkit-transform: skewY(-0.5deg);
+	-moz-transform: skewY(-0.5deg);
+	-o-transform: skewY(-0.5deg);
+	transform: skewY (-0.5deg);
 }
 h2 {
 	margin: 1em 2.5em;
@@ -306,21 +308,30 @@ h3 {
 #mainpost p, #mainpost a, h2 {
 	color: #fff;
 }
+.read {
+	-webkit-transition: letter-spacing 0.5s ease;
+	-moz-transition: letter-spacing 0.5s ease;
+	-o-transition: letter-spacing 0.5s ease;
+	transition: letter-spacing 0.5s ease;
+}
+.read:hover {
+	letter-spacing: 5px;
+	border: none;
+}
 .morepost {
 	width: 33.33%;
 	float: left;
 	height: 32em;
-	-webkit-transition: transform 1s ease;
-	-moz-transition: transform 1s ease;
-	-o-transition: transform 1s ease;
-	transition: transform 1s ease;
+	-webkit-transition: transform 1s linear;
+	-moz-transition: transform 1s linear;
+	-o-transition: transform 1s linear;
+	transition: transform 1s linear;
 }
 .morepost:hover {
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	-o-transform: translateY(-10px);
-	transform: translateY(-10px);
-
+	-webkit-transform: skewY(-0.5deg);
+	-moz-transform: skewY(-0.5deg);
+	-o-transform: skewY(-0.5deg);
+	transform: skewY (-0.5deg);
 }
 .morepost h3 {
 	font-size: 1.2em;
@@ -393,14 +404,14 @@ footer a {
 	font-family: Arial, sans-serif;
 	font-weight: 100;
 	border-bottom: none;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: color 1s ease;
+	-moz-transition: color 1s ease;
+	-o-transition: color 1s ease;
+	transition: color 1s ease;
 }
 footer a:hover {
-	font-size: 0.9em;
 	color: #ff5b3f;
+	border: none;
 }
 .furtherPosts {
 	width: 70%;
