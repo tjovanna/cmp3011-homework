@@ -28,6 +28,7 @@ nav {
 	overflow: visible;
 	zoom: 1;
 }
+/*underline transition*/
 a {
 	text-decoration: none;
 	text-transform: uppercase;
@@ -41,6 +42,7 @@ a {
 a:hover {
 	border-color: #fff;
 }
+/*border color transition*/
 nav a {
 	color: #fff;
 	-webkit-transition: border-color 1s ease;
@@ -90,6 +92,7 @@ nav .logo a span {
 	font-weight: 100;
 	z-index: 10;
 }
+/*letter spacing transition*/
 .read {
 	letter-spacing: 2px;
 	-webkit-transition: letter-spacing 1s ease;
@@ -268,6 +271,8 @@ input {
 .SubNav li a {
 	padding: 0px 0;
 }
+
+/*translate up and over + transition*/
 #mainpost {
 	background-image: url(colorlessdrawing.jpg);
 	width: 66.66%;
@@ -306,6 +311,7 @@ h3 {
 #mainpost p, #mainpost a, h2 {
 	color: #fff;
 }
+/*translate up + transition*/
 .morepost {
 	width: 33.33%;
 	float: left;
@@ -386,6 +392,7 @@ h4 {
 	font-size: 0.7em;
 	padding: 1em;
 }
+/*increase font size and text color transition*/
 footer a {
 	color: #fff;
 	position: relative;
