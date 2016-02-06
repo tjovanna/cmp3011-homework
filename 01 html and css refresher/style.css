@@ -14,7 +14,7 @@ nav {
 	z-index: 200;
 	top: 0px;
 	width: 100%;
-	height: 3.9em;
+	height: 4em;
 	color: #fff;
 	background: #000;
 	text-align: center;
@@ -31,10 +31,25 @@ nav {
 a {
 	text-decoration: none;
 	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
 	color: #282525;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
 a:hover {
-	text-decoration: underline;
+	border-color: #fff;
+}
+nav a {
+	color: #fff;
+	-webkit-transition: border-color 1s ease;
+	-moz-transition: border-color 1s ease;
+	-o-transition:  border-color1s ease;
+	transition: border-color 1s ease;
+}
+nav a:hover {
+	border-color: #ff5b3f;
 }
 nav .logo a {
 	width: 100%;
@@ -44,9 +59,7 @@ nav .logo a {
 	display: block;
 	height: 100%; 
 }
-nav a {
-	color: #fff;
-}
+
 ul {
 	list-style: none;
 }
@@ -72,9 +85,20 @@ nav .logo {
 	line-height: 2em;
     width: 28.7%;
 }
+
 nav .logo a span {
 	font-weight: 100;
 	z-index: 10;
+}
+.read {
+	letter-spacing: 2px;
+	-webkit-transition: letter-spacing 1s ease;
+	-moz-transition: letter-spacing 1s ease;
+	-o-transition: letter-spacing 1s ease;
+	transition: letter-spacing 1s ease;
+}
+.read:hover {
+	letter-spacing: 5px;
 }
 .logo .b {
 	background-color: #fff;
@@ -208,6 +232,7 @@ input {
 	line-height: 1.5em;
 	text-align: left;
 }
+
 .textContainer {
 	background: #fff;
 	margin: 0px;
@@ -249,6 +274,16 @@ input {
 	height: 32em;
 	clear: both;
 	float: left;
+	-webkit-transition: transform 1s ease;
+	-moz-transition: transform 1s ease;
+	-o-transition: transform 1s ease;
+	transition: transform 1s ease;
+}
+#mainpost:hover {
+	-webkit-transform: translate(10px, -10px);
+	-moz-transform: translate(10px, -10px);
+	-o-transform: translate(10px, -10px);
+	transform: translate(10px, -10px);
 }
 h2 {
 	margin: 1em 2.5em;
@@ -275,6 +310,17 @@ h3 {
 	width: 33.33%;
 	float: left;
 	height: 32em;
+	-webkit-transition: transform 1s ease;
+	-moz-transition: transform 1s ease;
+	-o-transition: transform 1s ease;
+	transition: transform 1s ease;
+}
+.morepost:hover {
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+	transform: translateY(-10px);
+
 }
 .morepost h3 {
 	font-size: 1.2em;
@@ -346,6 +392,15 @@ footer a {
 	font-size: 0.75em;
 	font-family: Arial, sans-serif;
 	font-weight: 100;
+	border-bottom: none;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+footer a:hover {
+	font-size: 0.9em;
+	color: #ff5b3f;
 }
 .furtherPosts {
 	width: 70%;
