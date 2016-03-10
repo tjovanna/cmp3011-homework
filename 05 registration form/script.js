@@ -179,6 +179,7 @@ function validateForm() {
    	//Add text node to our paragraph element
    	username_p.appendChild(username_text);
    	//Add the paragraph element to our #form_values_div.
+   	form_values_div.appendChild(username_p);
 
    var email_p = document.createElement("p");
    var email_text = document.createTextNode("Email: " + mail.value);
@@ -197,7 +198,7 @@ function validateForm() {
    form_values_div.style.backgroundColor = selectedColor ;
 
    //Change foreground color to white if the dark background color is chosen
-   if( selectedColor == '#484147') {
+   if( selectedColor == '#282525') {
    		form_values_div.style.color = 'white';
    }
    else {

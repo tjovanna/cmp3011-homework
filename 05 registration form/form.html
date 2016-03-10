@@ -62,82 +62,101 @@
 						</div>
 					</div>		
 				</div>
-			<div class="maintext">
+			<div class="textContainer">
+				<section class="maintext">
 				<div id="content">
-
+					<h3>REGISTER FOR EXCLUSIVE ACCESS</h3>
+						<p>
+							If you are a Murakami fan, chances are you have been carried away by his highly 
+							imaginative scenese and vividly remember his mesmerizing characters. Enjoy exclusive new content from the author when you register below.
+						</p>
         			<form name="MyForm" method="post" action="">
 
             <!--Username-->
-		            <h4>
+		   <!--          <h4>
 		                <label for="username">
 		                    username
 		                </label>
 		            </h4>
-
-		            <input type="text" id="username" name="username" /> <span class="warning_message" id="username_message">&nbsp;</span>
+ -->
+		            <p class="warning_message" id="username_message">&nbsp;</p>
+		            <input type="text" id="username" name="username" placeholder="NAME..."/> 
+		           
 
 		            <!--Email-->
 
-		            <h4>
+		        <!--     <h4>
 		                <label for="mail">
 
 		                    email
 
 		                </label>
-		            </h4>
+		            </h4> -->
 
-		            <input type="text" id="mail" name="mail" /> <span class="warning_message" id="email_message">&nbsp;</span>
+		            <p class="warning_message" id="email_message">&nbsp;</p>
+		            <input type="text" id="mail" name="mail" placeholder="EMAIL ADDRESS..."/> 
 
 		            <!--Password-->
 
-		            <h4>
+		        <!--     <h4>
 		                <label for="Password">
 
 		                    password
 		                </label>
 		            </h4>
-
-		            <input type="password" id="password" name="password" /> <span class="warning_message" id="password_message">&nbsp;</span>
+ -->
+		            <p class="warning_message" id="password_message">&nbsp;</p>
+		            <input type="password" id="password" name="password" placeholder="PASSWORD..." />
 
 		            <!--Confirm Password-->
-		            <h4>
+		      <!--       <h4>
 		                <label for="confirmPass">
 		                    confirm password
 		                </label>
 		            </h4>
+ -->
+		            <p class="warning_message" id="password_confirm_message">&nbsp;</p>
+		            <input type="password" id="confirm_password" name="confirm_password" placeholder="CONFIRM PASSWORD"/> 
 
-		            <input type="password" id="confirm_password" name="confirm_password"/> <span class="warning_message" id="password_confirm_message">&nbsp;</span>
+		            <!--RADIO-->		                
+		            <p class="warning_message" id="color_message">&nbsp;</p>
+		            <div id="color_options">
+		            <p>Choose your favorite color: </p>
+		            	<input type="radio" name="color" value="#ff5b3f">
+		                <div class="color_swatch" style="width:10em; height: 1em; border: 1px solid white; background-color:#ff5b3f;"></div>
+		           
+		                <input type="radio" name="color" value="#DEDDDA">
+		                <div class="color_swatch" style="width:10em; height: 1em; border: 1px solid white; background-color: #DEDDDA;"></div>
 
-		            <!--RADIO-->
-		                <h4>favorite color</h4>
-		                
-		            <span id="color_options">
-		                <div class="color_swatch" style="width:10px; height: 10px; border: 1px solid white; background-color:#6dc6c7;"></div>
+		            	<input type="radio" name="color" value="#5ec5be">
+		                <div class="color_swatch" style="width:10em; height: 1em; border: 1px solid white; background-color: #5ec5be;"></div>
 		            
-		                <input type="radio" name="color" value="#6dc6c7">
-
-		                <div class="color_swatch" style="width:10px; height: 10px; border: 1px solid white; background-color: #f57373;"></div>
+		            	<input type="radio" name="color" value="#282525">
+		                <div class="color_swatch" style="width:10em; height: 1em; border: 1px solid white; background-color:#282525;"></div>
 		            
-		                <input type="radio" name="color" value="#f57373">
-
-		                <div class="color_swatch" style="width:10px; height: 10px; border: 1px solid white; background-color: #a182e0;"></div>
 		            
-		                <input type="radio" name="color" value="#a182e0">
-
-		                <div class="color_swatch" style="width:10px; height: 10px; border: 1px solid white; background-color:#484147;"></div>
-		            
-		                <input type="radio" name="color" value="#484147">
-		            <span class="warning_message" id="color_message">&nbsp;</span>
-		            <br />
-		            <br />
-
-		            <input type="button" name="submit" id="submit" value="register" onclick="validateForm();">
+		            </div>
+		            <input type="button" name="submit" id="submit" value="REGISTER" onclick="validateForm();">
 
 		        </form>
-
-
-		        <script type="text/javascript" src="script.js"></script>
-    </div><!--END episode_details-->
+		</div>
+    </section><!--END episode_details-->
 </div><!--END page-->
+<footer class="subpage">
+		<h4>Contact</h4>
+			<div class="address ng-binding" ng-bind-html="siteVars.footer_address">
+				<p>
+					<a href="http://knopfdoubleday.com/imprint/knopf/" target="_blank">Alfred A. Knopf </a>
+					 | 
+					<a href="http://knopfdoubleday.com/imprint/vintage/" target="_blank">Vintage Books</a>
+					  | 
+					<a href="http://www.randomhouse.com/about/privacy.html" target="_blank">Privacy Policy</a>
+				 </p>
+				<p>
+					<a href="mailto:vintageanchorpublicity@randomhouse.com">Email Us</a>
+				</p>
+			</div>
+	</footer>
+ <script type="text/javascript" src="script.js"></script>
 	</body>
 </html>
