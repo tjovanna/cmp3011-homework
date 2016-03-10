@@ -26,6 +26,7 @@ input[type="text"], input[type="password"] {
     display: block;
     margin: 0 auto;
     width: 30%;
+    padding: 0.75em;
 }
 
 input[type="text"].error, input[type="password"].error, span.error {
@@ -56,8 +57,8 @@ input[type="radio"] {
 }
 #color_options {
     border: 1px solid #000;
-    width: 21%;
-    padding: 1em;
+    width: 25%;
+    padding: 2em;
     margin: 0 auto;
 }
 
