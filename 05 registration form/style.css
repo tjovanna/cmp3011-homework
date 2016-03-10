@@ -1,8 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Lekton);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
+@font-face {
+	font-family: 'Andale Mono';
+	src: url('Andale Mono.ttf');
+}
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-	font-family: "Lekton", sans-serif;
+	font-family: "Andale Mono", sans-serif;
 	font-size: 16px;
 	line-height: 2em;
 	letter-spacing: .2em;
@@ -28,30 +32,25 @@ nav {
 	overflow: visible;
 	zoom: 1;
 }
-/*underline transition*/
 a {
 	text-decoration: none;
 	text-transform: uppercase;
 	border-bottom: 1px solid transparent;
 	color: #282525;
+}
+a:hover {
+	border-color: #fff;
+}
+/*border color & underline transition*/
+nav a {
+	color: #fff;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
 	transition: all 1s ease;
 }
-a:hover {
-	border-color: #fff;
-}
-/*border color transition*/
-nav a {
-	color: #fff;
-	-webkit-transition: border-color 1s ease;
-	-moz-transition: border-color 1s ease;
-	-o-transition:  border-color1s ease;
-	transition: border-color 1s ease;
-}
 nav a:hover {
-	border-color: #ff5b3f;
+	color: #ff5b3f;
 }
 nav .logo a {
 	width: 100%;
@@ -60,6 +59,7 @@ nav .logo a {
 	position: relative;
 	display: block;
 	height: 100%; 
+	border: none;
 }
 
 ul {
@@ -157,7 +157,7 @@ h1{
 	line-height: 1em;
 	margin: auto;
 	clear: both;
-	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Vollkorn', serif;
 }
 section h1 {
 	font-size: 1.875em;
@@ -172,7 +172,7 @@ section h1 {
 	margin: 0 auto;
 }
 .maintext img {
-	margin: 0 3.5em;
+	margin: 0 14em;
 }
 #hero h1 {
 	font-weight: 500;
@@ -181,6 +181,10 @@ section h1 {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	font-size: 5em;
+}
+.container p {
+	font-family: 'Vollkorn', serif;
+	font-style: italic;
 }
 .outerCenter {
 	width: 100%;
@@ -236,6 +240,10 @@ input {
 	text-align: left;
 }
 
+#wrapper p {
+	font-family: 'Vollkorn', serif;
+	font-style: italic;
+}
 .textContainer {
 	background: #fff;
 	margin: 0px;
@@ -270,34 +278,34 @@ input {
 }
 .SubNav li a {
 	padding: 0px 0;
+	-webkit-transition:color 0.5s ease;
+	-moz-transition:color 0.5s ease;
+	-o-transition:color 0.5s ease;
+	transition: color 0.5s ease;
 }
 
-/*translate up and over + transition*/
+.SubNav li a:hover {
+	color: #ff5b3f;
+}
+section a {
+	border: none;
+}
 #mainpost {
 	background-image: url(colorlessdrawing.jpg);
 	width: 66.66%;
-	height: 32em;
 	clear: both;
 	float: left;
-	-webkit-transition: transform 1s ease;
-	-moz-transition: transform 1s ease;
-	-o-transition: transform 1s ease;
-	transition: transform 1s ease;
 }
-#mainpost:hover {
-	-webkit-transform: translate(10px, -10px);
-	-moz-transform: translate(10px, -10px);
-	-o-transform: translate(10px, -10px);
-	transform: translate(10px, -10px);
+#mainpost, .morepost {
+	height: 25em;
 }
-h2 {
-	margin: 1em 2.5em;
-}
-h3 {
-	margin: 1.2em;
+h2, h3 {
+	margin: 2em 2.2em;
+	text-align: center;
+	font-family: "Andale Mono", sans-serif;
 }
 #mainpost p {
-	margin: 19.5em 4em;
+	margin: 11.5em 4em;
 	font-size: 1em;
 	height: 4em;
 	width: 80%;
@@ -305,44 +313,31 @@ h3 {
 }
 #mainpost a {
 	float: right;
-	padding: 2em 0em;
+	padding: 2em;
 	font-size: 0.8em;
+	margin: 0em -1em;
 }
 #mainpost p, #mainpost a, h2 {
 	color: #fff;
 }
-/*translate up + transition*/
 .morepost {
 	width: 33.33%;
 	float: left;
-	height: 32em;
-	-webkit-transition: transform 1s ease;
-	-moz-transition: transform 1s ease;
-	-o-transition: transform 1s ease;
-	transition: transform 1s ease;
 }
-.morepost:hover {
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	-o-transform: translateY(-10px);
-	transform: translateY(-10px);
 
-}
 .morepost h3 {
 	font-size: 1.2em;
 	text-align: center;
 }
-.morepost img {
-	margin: 0 auto;
-}
 .morepost p {
-	margin: 2em 5em;
+	margin: 3em 4em;
 	text-align: left;
 	font-size: 0.8125em;
 	width: 75%;
+	padding: 1em;
 }
 .morepost a {
-	margin: 1.5em 23em;
+	margin: 2.5em 16em;
     font-size: 0.815em;
     display: inline-block;
     width: 15em;
@@ -353,29 +348,28 @@ h3 {
 #post2 {
 	background: #5ec5be;
 }
-#post2 img {
-	margin: 0 10em;
-}
-#post3 img {
-	margin: 0 8.5em;
-}
-#post4 {
+#post3 {
 	background: #ff5b3f;
 }
-#post4 img {
-	margin: 0 4em;
+#post4 {
+	/*color: #ff5b3f;*/
+	color: #fff;
+	background-image: url("murakamiportrait.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 25em;
 }
-#post5 img {
-	margin: 0 4.5em;
+#post4 a {
+	color: #fff;
 }
-#post5, #post3 {
+#post5 {
 	background: #deddda;
 }
 
 footer {
 	background: #000;
 	position: relative;
-	margin-top: 66em;
+	margin-top: 54em;
 	padding: 15px 0px 20px;
 }
 .subpage {
@@ -412,7 +406,7 @@ footer a:hover {
 .furtherPosts {
 	width: 70%;
 	background: #282525;
-	height: 50em;
+	height: 30em;
 	margin: 0 auto;
 }
 .furtherPosts p {
@@ -437,26 +431,156 @@ footer a:hover {
 	margin: 1em 2em;
     display: inline-block;
 }
-#moreimg1, #moreimg2 {
-	padding: 1em 0;
-}
-#moreimg3 {
-	width: 250px;
-	margin: 2em 2em;
-}
 .readmore {
 	width: 33.33%;
 	float: left;
+	height: 25em;
 }
 #smallpost1{
 	background: #ff5b3f;
-	height: 45em;
 }
 #smallpost2 {
 	background: #fff;
-	height: 45em;
 }
 #smallpost3 {
 	background: #5ec5be;
-	height: 45em;
+}
+
+/*media queries*/
+@media screen and (max-width: 1024px) {
+	nav .logo {
+		font-size: 1.5em;
+	}
+	.morepost, #mainpost {
+		width: 50%;
+	}
+	#post5 {
+		display: none;
+	}
+	#mainpost h2, .morepost h3 {
+		font-size: 1.5em;
+	}
+	#mainpost p {
+		font-size: 0.875em;
+		margin: 3em auto;
+		color: #282525;
+		padding: 2em;
+	}
+	.morepost p {
+		margin: 4em auto;
+	}
+	.morepost a {
+		font-size: 1em;
+		margin: 1.5em 18em;
+	}
+	#mainpost a {
+		font-size: 1em;
+		margin: -0.5em 1em;
+	}
+	.maintext img {
+		margin: 0 6.5em;
+	}
+	.furtherPosts {
+		height: 40em;
+	}
+	.readmore {
+		height: 35em;
+	}
+	.furtherPosts a {
+		margin: 3em 2em;
+		width: 15em;
+	}
+	footer { 
+		margin-top: 53em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	li {
+		display: none;
+	}
+	.b {
+		display: none;
+	}
+	nav .logo {
+		width: 90%;
+		margin: 0 0.5em;
+	}
+	.ng-scope {
+		margin: auto 0.5em;
+	}
+	#mainpost, .morepost {
+		float: none;
+		width: 100%;
+		margin: -4em auto;
+	}
+	h2 {
+		padding: 1em;
+	}
+	h3 {
+		padding: 1.5em;
+	}
+	.morepost a, #mainpost a {
+		font-size: 1.25em;
+	}
+	.morepost a {
+		margin: 2em 3em;
+	}
+	#mainpost a {
+		width: 13em;
+		margin: 0 0em;
+	}
+	#mainpost p, .morepost p {
+		margin: -6em auto;
+	}
+	#mainpost p {
+		color: #fff;
+	}
+	.maintext img {
+		width: 70%;
+		margin: 0 2.5em;
+	}
+	.pipe {
+		display: none;
+	}
+	.SubNav li {
+		display: block;
+		font-size: 1em;
+		padding: 0.5em;
+	}
+	.maintext p {
+		font-size: 0.75em;
+		line-height: 2em;
+		letter-spacing: 1px;
+		width: 80%;
+	}
+	.furtherPosts {
+		width: 80%;
+	}
+	.furtherPosts h2 { 
+		font-size: 1.2em;
+		padding: 1.5em 0;
+	}
+	.readmore {
+		float: none;
+		width: 100%;
+		margin: -3em 0;
+		height: 30em;
+	}
+	.readmore h3 {
+		padding: 2em 1em;
+	}
+	.readmore p {
+		line-height: 2em;
+		margin: -2em auto;
+	}
+	.readmore a {
+		margin: 3em 4em;
+	}
+	.subpage {
+		margin-top: 57em;
+	}
+	footer {
+		margin-top: 4em;
+	}
 }

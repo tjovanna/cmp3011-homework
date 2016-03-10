@@ -1,0 +1,33 @@
+body {
+    font-family: Helvetica, sans-serif ;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid #000 ;
+}
+
+input[type="text"].error, input[type="password"].error, span.error {
+    background-color: pink ;
+    border: 1px solid red ;
+}
+
+input[type="text"].no_error, input[type="password"].no_error, span.no_error {
+    background-color: white ;
+    border: 1px solid #000 ;
+}
+
+.warning_message {
+    color: red ;
+}
+
+.username_message, .email_message, .password_message, .password_confirm_message, .color_message {
+    visibility: hidden ;
+}
+
+.color_swatch {
+    display: inline-block;
+}
+
+input[type="radio"] {
+    margin-left: none ;
+}
