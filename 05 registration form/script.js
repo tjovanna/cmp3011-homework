@@ -199,10 +199,10 @@ function validateForm() {
 
    //Change foreground color to white if the dark background color is chosen
    if( selectedColor == '#282525') {
-   		form_values_div.style.color = 'white';
+   		document.form_values_div.style.color = 'white';
    }
    else {
-   		form_values_div.style.color = 'black'
+   		document.form_values_div.style.color = 'black'
    }
 
    }
