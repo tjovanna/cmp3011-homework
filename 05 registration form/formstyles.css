@@ -44,10 +44,10 @@ input[type="text"].no_error, input[type="password"].no_error, span.no_error {
     font-size: 0.75em;
 }
 
-.username_message, .email_message, .password_message, .password_confirm_message, .color_message {
+/*.username_message, .email_message, .password_message, .password_confirm_message, .color_message {
     visibility: hidden ;
 }
-
+*/
 .color_swatch {
     display: inline-block;
 }

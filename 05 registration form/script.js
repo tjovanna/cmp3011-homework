@@ -33,14 +33,14 @@ function validateForm() {
 		console.log(error_message) ;
 		username_textfield.setAttribute('class', 'error') ; //CSS class
 		document.getElementById('username_message').textContent = error_message ; //set error msg contents
-		document.getElementById('username_message').style.visibility = 'visible' ; //make error msg visible
+		// document.getElementById('username_message').style.visibility = 'visible' ; //make error msg visible
 		has_an_error = true ; 
 	}
 	else { //long enough
 		console.log( 'The username was MORE THAN 2 characters!' ) ; 
 		username_textfield.removeAttribute('class', 'error') ; //remove CSS class
-		document.getElementById('username_message').textContent = ''; //blanks out error message
-		document.getElementById('username_message').style.visibility = 'hidden' ; //hide blank error message
+		document.getElementById('username_message').textContent = ' '; //blanks out error message
+		// document.getElementById('username_message').style.visibility = 'hidden' ; //hide blank error message
 	}
 
 	//EMAIL
@@ -49,14 +49,14 @@ function validateForm() {
 		console.log(error_message) ;
 		mail_textfield.setAttribute('class', 'error') ; 
 		document.getElementById('email_message').textContent = error_message ; 
-		document.getElementById('email_message').style.visibility = 'visible' ;
+		// document.getElementById('email_message').style.visibility = 'visible' ;
 		has_an_error = true ;
 	}
 	else {
 		console.log( 'The email was MORE THAN 5 characters!' ) ;
         mail_textfield.removeAttribute('class', 'error' ) ; 
-        document.getElementById('email_message').textContent = '' ; 
-        document.getElementById('email_message').style.visibility = 'hidden' ; 
+        document.getElementById('email_message').textContent = ' ' ; 
+        // document.getElementById('email_message').style.visibility = 'hidden' ; 
     }
 
     //PASSWORD
@@ -67,15 +67,15 @@ function validateForm() {
     	console.log(error_message);
     	       password_field.setAttribute('class', 'error' ) ; 
         document.getElementById('password_message').textContent = error_message ; 
-        document.getElementById('password_message').style.visibility = 'visible' ; 
+        // document.getElementById('password_message').style.visibility = 'visible' ; 
         has_an_error = true ;
         check_password_for_a_number = false ; // Should we continue the other password checks? If false, don't bother.
     }
     else { 
         console.log( 'The password was MORE THAN ten characters!' ) ;
         password_field.removeAttribute('class', 'error' ) ; 
-        document.getElementById('password_message').textContent = '' ; 
-        document.getElementById('password_message').style.visibility = 'hidden' ; 
+        document.getElementById('password_message').textContent = ' ' ; 
+        // document.getElementById('password_message').style.visibility = 'hidden' ; 
         check_password_for_a_number = true ; 
     }
     
@@ -91,7 +91,7 @@ function validateForm() {
     		console.log(error_message) ;
     		password_field.setAttribute('class', 'error') ;
     		document.getElementById('password_message').textContent = error_message ;
-    		document.getElementById('password_message').style.visibility = 'visible' ;
+    		// document.getElementById('password_message').style.visibility = 'visible' ;
     		has_an_error = true ;
     		check_password_for_a_match = false ;
 
@@ -100,7 +100,7 @@ function validateForm() {
         	console.log( 'The password contains a number!' ) ;
         	password_field.removeAttribute('class', 'error' ) ; 
         	document.getElementById('password_message').textContent = '' ; 
-        	document.getElementById('password_message').style.visibility = 'hidden' ; 
+        	// document.getElementById('password_message').style.visibility = 'hidden' ; 
         	check_password_for_a_match = true ;
         }
 
@@ -114,14 +114,14 @@ function validateForm() {
             console.log( error_message ) ;
             confirm_password_field.setAttribute('class', 'error' ) ; 
             document.getElementById('password_confirm_message').textContent = error_message ;
-            document.getElementById('password_confirm_message').style.visibility = 'visible' ; 
+            // document.getElementById('password_confirm_message').style.visibility = 'visible' ; 
             has_an_error = true ;
         }
         else { 
             console.log( 'The passwords matched!' ) ;
             confirm_password_field.removeAttribute('class', 'error' ) ; 
             document.getElementById('password_confirm_message').textContent = '' ; 
-            document.getElementById('password_confirm_message').style.visibility = 'hidden' ; 
+            // document.getElementById('password_confirm_message').style.visibility = 'hidden' ; 
         }
     }
     
@@ -146,14 +146,14 @@ function validateForm() {
     	console.log(error_message) ;
     	color_options.setAttribute('class', 'error') ;
     	document.getElementById('color_message').textContent = error_message ;
-    	document.getElementById('color_message').style.visibility = 'visible' ;
+    	// document.getElementById('color_message').style.visibility = 'visible' ;
     	has_an_error = true ;
     }
     else {
     	console.log('A color was picked!') ;
     	color_options.removeAttribute('class', 'error') ;
     	document.getElementById('color_message').textContent = '';
-    	document.getElementById('color_message').style.visibility = 'hidden' ;
+    	// document.getElementById('color_message').style.visibility = 'hidden' ;
     }
 
     // If no errors above, echo the form contents under submit button
