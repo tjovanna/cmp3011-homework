@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
+
+@font-face {
+    font-family: 'Andale Mono';
+    src: url('Andale Mono.ttf');
+}
+
+body {
+    font-family: "Andale Mono", sans-serif ;
+}
+
+#content h3 {
+    color: #ff5b3f;
+    font-size: 2em;
+}
+
+#content p {
+    font-family: "Vollkorn", serif;
+    font-style: italic;
+    text-align: center;
+    margin: 10px auto;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid #000 ;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding: 0.75em;
+}
+
+input[type="text"].error, input[type="password"].error, span.error {
+    background-color: #5ec5be ;
+    border: 1px solid #ff5b3f ;
+}
+
+input[type="text"].no_error, input[type="password"].no_error, span.no_error {
+    background-color: white ;
+    border: 1px solid #000 ;
+}
+
+.warning_message {
+    color: #ff5b3f ;
+    font-size: 0.75em;
+}
+
+/*.username_message, .email_message, .password_message, .password_confirm_message, .color_message {
+    visibility: hidden ;
+}
+*/
+.color_swatch {
+    display: inline-block;
+}
+
+input[type="radio"] {
+    margin-left: none ;
+}
+#color_options {
+    border: 1px solid #000;
+    width: 25%;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+input[type="button"] {
+    display: block;
+    margin: 3em auto;
+    background-color: #ff5b3f;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+}
+.textContainer section:first-child {
+    padding: 30px 0 1px;
+}
+#form_values_div p {
+    font-family: "Vollkorn", serif;
+    font-style: italic;
+
+}
+.maintext .warning_message {
+    text-align: center;
+}
