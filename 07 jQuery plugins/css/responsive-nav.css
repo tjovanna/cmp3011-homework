@@ -8,7 +8,19 @@
 .nav-toggle {
   display: none;
 }
+button {
+  color: white;
+  padding: 1em;
+  border: 0;
+  cursor: pointer;
+  /*background: url("hamburger.png");*/
+  background: red;
+}
 
+button.active {
+  /*background: url("hamburger.png");*/
+  background: green;
+}
 @media screen and (max-width: 405px) {
   .nav-collapse ul {
     margin: 0;
@@ -47,6 +59,9 @@
   }
   nav {
     height: 18em ;
+  }
+  button {
+    display: none;
   }
 }
 

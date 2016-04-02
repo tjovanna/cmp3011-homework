@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-nav.css">
+	<link rel="stylesheet" type="text/css" href="css/hamburger.css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -42,6 +43,8 @@
   			</li>
         </ul>
    </nav>
+		<button id="toggle" class="closed">Toggle</button>
+
 	</header>
 	<div id="hero">
 			<div class="outerCenter">
@@ -142,7 +145,9 @@
 			</div>
 	</footer>
 <script>
-    var nav = responsiveNav(".nav-collapse");
+	var navigation = responsiveNav(".nav-collapse", {
+		customToggle: "#toggle"
+	});
 </script>
 </body>
 </html>

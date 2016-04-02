@@ -7,9 +7,8 @@ button {
 }
 
 button.active {
-  background: green;
+	background: green;
 }
-
 
 @media (min-width: 700px) {
   button {
