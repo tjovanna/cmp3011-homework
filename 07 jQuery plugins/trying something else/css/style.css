@@ -1,0 +1,586 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic);
+@font-face {
+	font-family: 'Andale Mono';
+	src: url('Andale Mono.ttf');
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+	font-family: "Andale Mono", sans-serif;
+	font-size: 16px;
+	line-height: 2em;
+	letter-spacing: .2em;
+	background: #000;
+	color: #282525;
+}
+nav {
+	position: fixed;
+	z-index: 200;
+	top: 0px;
+	width: 100%;
+	height: 4em;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	clear: both;
+}
+.container {
+	width: 100%;
+	max-width: 1350px;
+	margin: auto;
+	position: relative;
+	overflow: visible;
+	zoom: 1;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
+	color: #282525;
+}
+a:hover {
+	border-color: #fff;
+}
+/*border color & underline transition*/
+nav a {
+	color: #fff;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+nav a:hover {
+	color: #ff5b3f;
+}
+nav .logo a {
+	width: 100%;
+	max-width: 420px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	height: 100%; 
+	border: none;
+}
+
+ul {
+	list-style: none;
+}
+nav ul {
+	position: relative;
+	z-index: 199;
+	width: 100%;
+	margin: auto;
+	max-width: 1300px;
+	overflow: hidden;
+	height: auto;
+}
+nav li, nav .logo {
+	float: left;
+	font-size: 0.8125em;
+	width: 17.7%;
+	position: relative;
+	line-height: 4em;
+	margin: 5px auto;
+}
+nav .logo {
+	font-size: 1.875em;
+	line-height: 2em;
+    width: 28.7%;
+}
+
+nav .logo a span {
+	font-weight: 100;
+	z-index: 10;
+}
+/*letter spacing transition*/
+.read {
+	letter-spacing: 2px;
+	-webkit-transition: letter-spacing 1s ease;
+	-moz-transition: letter-spacing 1s ease;
+	-o-transition: letter-spacing 1s ease;
+	transition: letter-spacing 1s ease;
+}
+.read:hover {
+	letter-spacing: 5px;
+}
+.logo .b {
+	background-color: #fff;
+}
+.b {
+	position: absolute;
+	background: #fff;
+}
+.b.bl, .b.br {
+	width: 1px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+.b.br {
+	left: auto;
+	right: 0px;
+	top: auto;
+	bottom: 0px;
+}
+.b.bl.gap {
+	left: 10px;
+	top: auto;
+	bottom: 0px;
+}
+.b.br.gap {
+	right: 10px;
+	top: auto;
+	bottom: 0px;
+}
+.b.bb{
+	width: 100%;
+	height: 1px;
+	top: auto;
+	bottom: 0px;
+	left: auto;
+	right: 0px;
+}
+.logo .bb {
+	display: none;
+}
+#hero {
+	background-image: url("http://www.harukimurakami.com/wp-content/uploads/2014/10/current.gif");
+	color: #282525;
+	margin: 60px 0px 0px;
+	height: 320px;
+	background-size: auto;
+	background-position: 50% 50%;
+	background-repeat: repeat;
+	zoom: 1;
+}
+h1{
+	line-height: 1em;
+	margin: auto;
+	clear: both;
+	font-family: 'Vollkorn', serif;
+}
+section h1 {
+	font-size: 1.875em;
+	text-transform: none;
+	margin-bottom: 0;
+	padding: 1em;
+	text-align: center;
+	font-weight: 100;
+}
+.maintext {
+	width: 80%;
+	margin: 0 auto;
+}
+.maintext img {
+	margin: 0 14em;
+}
+#hero h1 {
+	font-weight: 500;
+	position: relative;
+	letter-spacing: .1em;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	font-size: 5em;
+}
+.container p {
+	font-family: 'Vollkorn', serif;
+	font-style: italic;
+}
+.outerCenter {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	z-index: 4;
+	margin-bottom: 20px;
+	position: relative;
+	display: table;
+}
+.innerCenter {
+	margin: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+#hero .container {
+	max-width: 1000px;
+	height: auto !important;
+}
+.ng-scope {
+	margin: 4.2em;
+}
+p {
+	text-align: center;
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.maintext p {
+	width: 70%;
+	margin: 0 auto;
+	text-align: left;
+}
+.Searchdiv {
+	margin: 0 auto;
+	width: 19%;
+	float: right;
+}
+.Searchdiv form {
+	max-width: 780px;
+	margin: auto;
+	padding-top: 0px;
+}
+input {
+	line-height: 1.5;
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+}
+#wrapper {
+	margin: auto;
+	clear: both;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+#wrapper p {
+	font-family: 'Vollkorn', serif;
+	font-style: italic;
+}
+.textContainer {
+	background: #fff;
+	margin: 0px;
+	width: 100%;
+	position: relative;
+	border-top: 1px solid #000;
+	clear: both;
+}
+.textContainer section {
+	border-left: solid 1px #000;
+	border-right: solid 1px #000;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 40px 5%;
+	width: 80%;
+}
+.textContainer section:first-child {
+	border-top: none;
+	padding: 30px 0 0;
+}
+.SubNav {
+	padding: 10px 25px;
+	width: 75%;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: solid 1px #000;
+}
+.SubNav li {
+	display: inline-block;
+	position: relative;
+	font-size: 0.8125em;
+}
+.SubNav li a {
+	padding: 0px 0;
+	-webkit-transition:color 0.5s ease;
+	-moz-transition:color 0.5s ease;
+	-o-transition:color 0.5s ease;
+	transition: color 0.5s ease;
+}
+
+.SubNav li a:hover {
+	color: #ff5b3f;
+}
+section a {
+	border: none;
+}
+#mainpost {
+	background-image: url(colorlessdrawing.jpg);
+	width: 66.66%;
+	clear: both;
+	float: left;
+}
+#mainpost, .morepost {
+	height: 25em;
+}
+h2, h3 {
+	margin: 2em 2.2em;
+	text-align: center;
+	font-family: "Andale Mono", sans-serif;
+}
+#mainpost p {
+	margin: 11.5em 4em;
+	font-size: 1em;
+	height: 4em;
+	width: 80%;
+	text-align: left;
+}
+#mainpost a {
+	float: right;
+	padding: 2em;
+	font-size: 0.8em;
+	margin: 0em -1em;
+}
+#mainpost p, #mainpost a, h2 {
+	color: #fff;
+}
+.morepost {
+	width: 33.33%;
+	float: left;
+}
+
+.morepost h3 {
+	font-size: 1.2em;
+	text-align: center;
+}
+.morepost p {
+	margin: 3em 4em;
+	text-align: left;
+	font-size: 0.8125em;
+	width: 75%;
+	padding: 1em;
+}
+.morepost a {
+	margin: 2.5em 16em;
+    font-size: 0.815em;
+    display: inline-block;
+    width: 15em;
+}
+#post2 img, #post3 img, #post4 img, #post5 img {
+	height: 200px;
+}
+#post2 {
+	background: #5ec5be;
+}
+#post3 {
+	background: #ff5b3f;
+}
+#post4 {
+	/*color: #ff5b3f;*/
+	color: #fff;
+	background-image: url("murakamiportrait.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 25em;
+}
+#post4 a {
+	color: #fff;
+}
+#post5 {
+	background: #deddda;
+}
+
+footer {
+	background: #000;
+	position: relative;
+	margin-top: 54em;
+	padding: 15px 0px 20px;
+}
+.subpage {
+	margin-top: 3em
+}
+h4 {
+	color: #ff5b3f;
+	margin-bottom: 0;
+	letter-spacing: 2px;
+	font-family: Arial, sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.7em;
+	padding: 1em;
+}
+/*increase font size and text color transition*/
+footer a {
+	color: #fff;
+	position: relative;
+	font-size: 0.75em;
+	font-family: Arial, sans-serif;
+	font-weight: 100;
+	border-bottom: none;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+footer a:hover {
+	font-size: 0.9em;
+	color: #ff5b3f;
+}
+.furtherPosts {
+	width: 70%;
+	background: #282525;
+	height: 30em;
+	margin: 0 auto;
+}
+.furtherPosts p {
+	font-size: 0.8125em;
+	text-align: left;
+	width: 80%;
+	margin: 0 auto;
+}
+.furtherPosts h2 {
+	margin: 1em 1em;
+	padding: 0.5em 0em;
+}
+.furtherPosts h3 {
+	text-align: center;
+}
+.furtherPosts img {
+	width: 200px;
+	margin: 0 4em;
+}
+.furtherPosts a {
+	padding: 0 1em;
+	margin: 1em 2em;
+    display: inline-block;
+}
+.readmore {
+	width: 33.33%;
+	float: left;
+	height: 25em;
+}
+#smallpost1{
+	background: #ff5b3f;
+}
+#smallpost2 {
+	background: #fff;
+}
+#smallpost3 {
+	background: #5ec5be;
+}
+
+/*media queries*/
+@media screen and (max-width: 1024px) {
+	nav .logo {
+		font-size: 1.5em;
+	}
+	.morepost, #mainpost {
+		width: 50%;
+	}
+	#post5 {
+		display: none;
+	}
+	#mainpost h2, .morepost h3 {
+		font-size: 1.5em;
+	}
+	#mainpost p {
+		font-size: 0.875em;
+		margin: 3em auto;
+		color: #282525;
+		padding: 2em;
+	}
+	.morepost p {
+		margin: 4em auto;
+	}
+	.morepost a {
+		font-size: 1em;
+		margin: 1.5em 18em;
+	}
+	#mainpost a {
+		font-size: 1em;
+		margin: -0.5em 1em;
+	}
+	.maintext img {
+		margin: 0 6.5em;
+	}
+	.furtherPosts {
+		height: 40em;
+	}
+	.readmore {
+		height: 35em;
+	}
+	.furtherPosts a {
+		margin: 3em 2em;
+		width: 15em;
+	}
+	footer { 
+		margin-top: 53em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	li {
+		display: none;
+	}
+	.b {
+		display: none;
+	}
+	nav .logo {
+		width: 90%;
+		margin: 0 0.5em;
+	}
+	.ng-scope {
+		margin: auto 0.5em;
+	}
+	#mainpost, .morepost {
+		float: none;
+		width: 100%;
+		margin: -4em auto;
+	}
+	h2 {
+		padding: 1em;
+	}
+	h3 {
+		padding: 1.5em;
+	}
+	.morepost a, #mainpost a {
+		font-size: 1.25em;
+	}
+	.morepost a {
+		margin: 2em 3em;
+	}
+	#mainpost a {
+		width: 13em;
+		margin: 0 0em;
+	}
+	#mainpost p, .morepost p {
+		margin: -6em auto;
+	}
+	#mainpost p {
+		color: #fff;
+	}
+	.maintext img {
+		width: 70%;
+		margin: 0 2.5em;
+	}
+	.pipe {
+		display: none;
+	}
+	.SubNav li {
+		display: block;
+		font-size: 1em;
+		padding: 0.5em;
+	}
+	.maintext p {
+		font-size: 0.75em;
+		line-height: 2em;
+		letter-spacing: 1px;
+		width: 80%;
+	}
+	.furtherPosts {
+		width: 80%;
+	}
+	.furtherPosts h2 { 
+		font-size: 1.2em;
+		padding: 1.5em 0;
+	}
+	.readmore {
+		float: none;
+		width: 100%;
+		margin: -3em 0;
+		height: 30em;
+	}
+	.readmore h3 {
+		padding: 2em 1em;
+	}
+	.readmore p {
+		line-height: 2em;
+		margin: -2em auto;
+	}
+	.readmore a {
+		margin: 3em 4em;
+	}
+	.subpage {
+		margin-top: 57em;
+	}
+	footer {
+		margin-top: 4em;
+	}
+}
