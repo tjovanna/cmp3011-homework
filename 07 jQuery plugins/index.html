@@ -4,51 +4,44 @@
 	<title>Haruki Murakami Blog</title>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-nav.css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="jquery.smartmenus.js"></script>
-    <script>
-        $(function() {
-            $('#main-menu').smartmenus({
-                subMenusSubOffsetX: 1,
-                subMenusSubOffsetY: -8
-            });
-        });
-    </script>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="sm-simple.css">
+    <script src="js/responsive-nav.js"></script>
 </head>
 <body>
 	<header>
-		<nav id="main-nav" role="navigation">
-			<ul id="main-menu" class="sm sm-simple">
-				<li>
-					<a class="nav-author" href="/author">Author</a>
-				</li>
-				<li>
-					<a class="nav-library" href="/library">Library</a>
-				</li>
-
-							<a href="#"><span class="home">Haruki Murakami</span>
-								<span class="b bl"></span>
-								<span class="b br"></span>
-								<span class="b bl gap"></span>
-								<span class="b br gap"></span>
-								<span class="b bb"></span>
-							</a>
-
-				<li class="spacer">
-					<a class="nav-community" href="/community">Community</a>
-				</li>
-				<li>
-					<a class="nav-resources" href="/resources">Resources</a>
-				</li>
-			</ul>
-		</nav>
-
+	<nav class="nav-collapse">
+  		<ul style="height: auto;">
+  			<li>
+  				<a class="nav-author" href="/author">Author</a>
+  			</li>
+  			<li>
+  				<a class="nav-library" href="/library">Library</a>
+  			</li>
+  			    <div class="container containerNav">
+				    <div id="stylelogo">
+					    <div class="logo">
+					      	<a href="#"><span class="home">Haruki Murakami</span>
+						          <span class="b bl"></span>
+						          <span class="b br"></span>
+						          <span class="b bl gap"></span>
+						          <span class="b br gap"></span>
+						          <span class="b bb"></span>
+					           </a>
+					     </div>
+			     	 </div>
+		     	 </div>
+  			<li class="spacer">
+  				<a class="nav-community" href="/community">Community</a>
+  			</li>
+  			<li>
+  				<a class="nav-resources" href="/resources">Resources</a>
+  			</li>
+        </ul>
+   </nav>
 	</header>
 	<div id="hero">
 			<div class="outerCenter">
@@ -148,5 +141,8 @@
 				</p>
 			</div>
 	</footer>
+<script>
+    var nav = responsiveNav(".nav-collapse");
+</script>
 </body>
 </html>
