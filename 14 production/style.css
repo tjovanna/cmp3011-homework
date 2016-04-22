@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Josefin Sans;
+    src: url(fonts/josefinsans/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: Josefin Sans;
+    src: url(fonts/josefinsans/JosefinSans-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Playfair Display";
+    src: url(fonts/playfairdisplay/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(fonts/playfairdisplay/PlayfairDisplay-Italic.ttf);
+    font-style: italic;
+}
+
+body {
+    background-color: rgba(220, 240, 233, 0.2);
+    color: #0A3A54;
+}
+/*Header styles*/
+header {
+    background: url("images/bathroom.jpg") bottom;
+    background-size: 384px 185px ;
+    width: 105%;
+    height: 9em;
+    margin: -1.4em -0.5em;
+}
+
+h1 {
+    padding: 3.43em 1em;
+    margin-left: 1.5em;
+}
+h1 a {
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    color: #FFF;
+}
+h1 a:hover {
+    color: #DCF0E9;
+}
+
+/*GOOGLE MAPS*/
+#map {
+    width: 105%;
+    height: 18em;
+    background-color: rgba(210,218,220, 0.4);
+    margin: 4em -0.5em;
+}
+
+/*ADDRESS AND SEARCH*/
+#main_form {
+    margin-top: -2em;
+}
+
+input[type=text] {
+    width: 75%;
+    margin: 4em -0.7em 0 -0.7em;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 2px solid #0A3A54;
+    background-color: rgba(220, 240, 233, 0.2);
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 0.75em;
+}
+input[type=button] {
+    width: 3em;
+    height: 3em;
+    margin: 0 2.9em;
+    border: none;
+}
+
+#main_form input[type=text] {
+    margin: 0 -0.7em;
+}
+input[type=submit] {
+    border: none;
+    width: 105%;
+    margin: 1em -0.5em;
+    padding: 0.5em;
+    height: 2em;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
+    color: #A7C9CA;
+}
+
+input[type=button], input[type=submit] {
+    cursor: pointer;
+    background-color: rgba(210,218,220, 0.4);
+}
+
+/*RESULTS STYLES*/
+.result_info {
+    margin: -2em 1em;
+}
+h2, .address_hours {
+    font-family: "Josefin Sans", sans-serif;
+}
+.business_info {
+    float: left;
+    width: 60%;
+}
+.side_info {
+    float: right;
+    height: 20em;
+    width: 40%
+}
+.description {
+    font-family: "Playfair Display", serif;
+    font-size: 0.85em;
+    /*margin: 1em auto;*/
+    width: 60%;
+}
+.description p {
+    margin-right: 0.5em;
+}
+
+.result_img {
+    width: 8em;
+    margin: 0.5em auto;
+}

@@ -1,0 +1,103 @@
+{
+  "bathrooms": [
+    {
+      "name": "Diesel Café",
+      "address": "257 Elm Street",
+      "hours": "6am-11pm, M-Su",
+      "stalls": "single",
+      "pay": false,
+      "image": "images/diesel.jpg",
+      "description": "Past the counter and toward the pool table, Diesel Café has 2 single stall bathrooms. It seems like these bathrooms get a fair amount of traffic. While they aren’t the cleanest in town, they’re also not disgusting. Staff doesn’t bat an eye if you waltz past the counter, and you don’t need a key to get in. "
+    },
+
+    {
+      "name": "iYo Bistro",
+      "address": "234 Elm Street",
+      "hours": "9am-11pm, M-Su",
+      "stalls": "single",
+      "pay": false,
+      "image": "images/iyo.jpg",
+      "description": "Some stuff"
+    },
+
+
+    {
+      "name": "Starbucks",
+      "address": "260 Elm Street",
+      "hours": "5:30am-10:30pm, M-Su",
+      "stalls": "single",
+      "pay": true,
+      "image": "images/starbucks.jpg",
+      "description": "More stuff"
+    },
+
+    {
+      "name": "Flatbread Company",
+      "address": "45 Day Street",
+      "hours": "11:30am-10pm, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/flatbread.jpg",
+      "description": ""
+    },
+
+    {
+      "name": "Five Horses Tavern",
+      "address": "400 Highland Avenue",
+      "hours": "11am-1am, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/fivehorses.jpg",
+      "description":""
+    },
+
+    {
+      "name": "The Painted Burro",
+      "address": "219 Elm Street",
+      "hours": "5pm-11pm, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/paintedburro.jpg",
+      "description": ""
+    },
+
+    {
+      "name": "Rosebud American Kitchen & Bar",
+      "address": "381 Summer Street",
+      "hours": "11:30am-12am, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/rosebud.jpg",
+      "description": ""
+    },
+    {
+      "name": "The Burren",
+      "address": "247 Elm Street",
+      "hours": "11:30am-2am, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/burren.jpg",
+      "description": ""
+    },
+
+    {
+      "name": "Mr. Crepe",
+      "address": "51 Davis Square",
+      "hours": "7am-10pm, M-Su",
+      "stalls": "single",
+      "pay": true,
+      "image": "images/mrcrepe.jpg",
+      "description": ""
+    },
+
+    {
+      "name": "Boston Burger Company",
+      "address": "257 Elm Street",
+      "hours": "11am-11pm, M-Su",
+      "stalls": "multiple",
+      "pay": true,
+      "image": "images/bostonburger.jpg",
+      "description": ""
+    }
+  ]
+}
