@@ -39,47 +39,38 @@ Feed content will appear here visually on the page.
 
 $('#rss_reader').on( 'submit', function (event) {
 	event.preventDefault() ; // don't actually submit the form
-
+//    console.log('clicked!');
 	// Get the source XML and the number of stories to display
 
     var source = $('#source').val();
+
     var displayNumber = $('input:radio[name=display_number]:checked').val();
+
+    var content  = '' ;
 
     $.get('feeds/' + source, '', function (response){
 
         //store XML returned in a jquery object
         $xml = $(response);
 
-        $xml.find('item').each( function ( ){
+        $xml.find('item').each( function(){
 
-            for (i=0; i< displayNumber; i++) {
-                var container = document.createElement('div');
+            $item = $(this);
 
-                var title = document.createElement('h3');
-                container.appendChild(document.createTextNode(getNodeValue(items[i], 'title')));
+            var title = $item.find('title').text();
 
-                var link = document.createElement('a');
-                link.setAttribute('href', getNodeValue(items[i], 'link'));
-                container.appendChild(link);
-
-                var description = document.createElement('p');
-                container.appendChild(document.createTextNode(getNodeValue(items[i], 'description')));
-
-                document.getElementsByTagName('hr').after(container);
-
-            }
-            if($('#include_summaries').is(':checked')) {
-                description.style.display='block';
-            }
-            else {
-                description.style.display= 'none';
-            }
+            content += "<p>" + title + "/<p>" ;
+//            console.log('title', title);
         });
 
-    function getNodeValue (obj, tag) {
-        return obj.getElementsByTagName(tag)[0].firstChild.nodeValue;
-    }
-    });
+        $('hr').after (content);
+
+        });
+
+//    function getNodeValue (obj, tag) {
+//        return obj.getElementsByTagName(tag)[0].firstChild.nodeValue;
+//    }
+//    });
 	// --
 	// general application flow:
 	// grab the values from the form

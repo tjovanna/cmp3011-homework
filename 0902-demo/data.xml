@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teams>
+    <team>
+        <team_type>soccer</team_type>
+        <team_name>Revolution</team_name>
+    </team>
+    <team>
+        <team_type>basketball</team_type>
+        <team_name>Celtics</team_name>
+    </team>
+    <team>
+        <team_type>hockey</team_type>
+        <team_name>Bruins</team_name>
+    </team>
+    <team>
+        <team_type>football</team_type>
+        <team_name>Patriots</team_name>
+    </team>
+</teams>
