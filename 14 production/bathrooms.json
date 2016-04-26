@@ -1,5 +1,4 @@
-{
-  "bathrooms": [
+"bathrooms": [
     {
       "name": "Diesel Café",
       "address": "257 Elm Street",
@@ -17,7 +16,7 @@
       "stalls": "single",
       "pay": false,
       "image": "images/iyo.jpg",
-      "description": "Some stuff"
+      "description": "iYo Bistro was recently remodeled and its bathrooms are cleaner than ever. It isn’t too busy (with most people hanging out to do work), but the self-serve fro-yo is in the back near the bathrooms and no one will suspect a thing if the first thing you do is make a beeline for the back."
     },
 
 
@@ -28,7 +27,7 @@
       "stalls": "single",
       "pay": true,
       "image": "images/starbucks.jpg",
-      "description": "More stuff"
+      "description": "Starbucks isn’t known for having the cleanest or freest bathrooms, and this one is no exception. You may have to buy a coffee for the code just to wade through toilet paper strewn about the floor, but you won’t find a place open earlier."
     },
 
     {
@@ -38,7 +37,7 @@
       "stalls": "multiple",
       "pay": false,
       "image": "images/flatbread.jpg",
-      "description": ""
+      "description": "Flatbread Company does a pretty good job of keeping their bathrooms clean. If you have a large group of people in need of some relief, the multiple-stalled bathrooms make this the spot for you. The friendly staff are happy to point you to the bathroom most days. If anyone gives you a hard time, you can always say you’re there for bowling."
     },
 
     {
@@ -48,7 +47,7 @@
       "stalls": "multiple",
       "pay": false,
       "image": "images/fivehorses.jpg",
-      "description":""
+      "description": "By day a family restaurant, by night a bustling sports bar: the ease of access to Five Horses largely depends on the time of day. At night, you’ll have no problem slipping in for free if you’re over 21, but you may have to shove your way through a crowd. During lunch, it’s going to be difficult to get access without asking for a table. (Our tip? Ask for a seat at the bar.) "
     },
 
     {
@@ -58,7 +57,7 @@
       "stalls": "multiple",
       "pay": false,
       "image": "images/paintedburro.jpg",
-      "description": ""
+      "description": "You’re not going to get to the bathrooms here without talking to the host/hostess. We suggest telling them you’ll be at the bar. It’s often a younger crowd here, so this one may be a bit harder to pull off if you have children with you."
     },
 
     {
@@ -68,7 +67,7 @@
       "stalls": "multiple",
       "pay": false,
       "image": "images/rosebud.jpg",
-      "description": ""
+      "description": "This one is super easy, and the bathrooms are pretty nice. There’s usually a lot going on at the Rosebud, so all you have to do is confidently walk back to the bathrooms and no one will question you. They’re too busy."
     },
     {
       "name": "The Burren",
@@ -77,7 +76,7 @@
       "stalls": "multiple",
       "pay": false,
       "image": "images/burren.jpg",
-      "description": ""
+      "description": "During the day, the Burren is a nice little family restaurant that will happily let you use the bathrooms without a hassle. The bathrooms are fine for a pub, but you won’t find much clean space to change a diaper. By night, this establishment turns into one of Davis Square’s most popular bars/music venues. If there is music playing, you’ll have to show an ID and pay a cover (usually around $5) to get in."
     },
 
     {
@@ -87,7 +86,7 @@
       "stalls": "single",
       "pay": true,
       "image": "images/mrcrepe.jpg",
-      "description": ""
+      "description": "Mr. Crepe is a nice little creperie/café in the heart of Davis Square. The counter faces you right as you walk in. Ask the staff for the key, and they may tell you it’s for customers only. A quick purchase of a bottle of water will open the bathroom gates for you. It’s important to hydrate anyway!"
     },
 
     {
@@ -97,7 +96,7 @@
       "stalls": "multiple",
       "pay": true,
       "image": "images/bostonburger.jpg",
-      "description": ""
+      "description": "This particular Boston Burger Company location is pretty small, with the door leading right up to the host/hostess stand. You probably won’t be able to gain access to the bathrooms here without getting a table or a burger to go."
     }
   ]
 }

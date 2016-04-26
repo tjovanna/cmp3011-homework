@@ -1,0 +1,1328 @@
+
+/*
+css dropdown menus:
+http://cssdeck.com/labs/another-simple-css3-dropdown-menu
+
+register button:
+http://css3buttongenerator.com
+
+image rollover: box with a background image, 
+create a hover style for that box that contains a different 
+backfground image.
+
+<div class="leftimage"></div>
+
+*/
+
+body {
+	font-family: 'Abel', sans-serif;
+	font-weight: lighter;
+	background-color: white;
+	color:#000000;
+  min-height: 100%;
+
+}
+#wrapper{
+  position: absolute;
+  width: 90%;
+  top:210px;
+  bottom:200px;
+  margin-left: 10%;
+  margin-right:10%;
+  margin-bottom: 25px;
+
+  background-color: white;}
+header{
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  background-color: #000; 
+  color:white;
+  height: 200px;
+  top: 0px;
+  position: absolute;
+  z-index: 50;
+
+}
+ footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background: black;
+    color:white;
+}
+h2{font-family: 'sacramento', cursive;
+  font-size: 175%}
+h3{font-size: 85%}
+
+li {
+  list-style: none;
+}
+p{
+  line-height: 125%;
+}
+.summary::first-letter{
+  font-family: 'sacramento', cursive; 
+  font-size: 175%;
+  color: #9E1F60;
+}
+
+a {
+  color:#9E1F60;
+  text-decoration: none;
+  padding: 5px;
+
+}
+a:hover{
+  font-weight: bold;
+}
+.register_me{
+  width: 940px;
+  text-align: center;
+}
+#wrapper .graphic_box{
+  position:absolute;
+
+  margin-bottom: 25px;
+ /*border: 1px solid red;*/ 
+ display: block;
+ padding:10px;
+ max-height: 350px;
+ 
+}
+.tobin_pole_photo:hover{
+  opacity: 0.3;
+}
+.video{
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -640px;
+}
+.video_img{
+  position: absolute; 
+  
+  margin-top: 0px;
+}
+.video_img:hover{
+  opacity: 0.3;
+}
+
+
+}
+h2.directions{
+  padding:10px;
+}
+.connectinfo{
+  
+  width: 300px;
+  margin-left: 620px;
+  margin-top: -500px;
+  position: absolute;
+  padding-left: 25px;
+}
+/*#wrapper .graphic_box {
+   width: 350px ;
+    height: 300px ;
+    display: inline-block ;*/
+  }
+  .pole_button{
+    display: block;
+    padding: 3px;
+  }
+  .pole_button:hover{
+    opacity: 0.3;
+    -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  }
+  .aerial_button{
+   
+    padding:3px;
+  }
+  .aerial_button:hover{
+    -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+    opacity: 0.3;
+  }
+  .alt_fit{
+   
+    padding: 3px;
+  }
+  .alt_fit:hover{
+    -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+    opacity: 0.3
+  }
+
+
+article.pricelist{
+  display: block;
+  padding-left: 200px;
+}
+.studio_image2{
+  position: absolute;
+  display: inline-block;
+  margin-left: 400px;
+  margin-top: -70px;
+  margin-bottom: 300px;
+}
+
+
+}
+article.tobin .christine .sierra{width:400px;}
+}
+.philosophy{
+  width: 700px;
+  margin-right: 50px;
+  overflow: none;
+}
+.btn {
+  background: #9e005d;
+  background-image: -webkit-linear-gradient(top, #9e005d, #eb008d);
+  background-image: -moz-linear-gradient(top, #9e005d, #eb008d);
+  background-image: -ms-linear-gradient(top, #9e005d, #eb008d);
+  background-image: -o-linear-gradient(top, #9e005d, #eb008d);
+  background-image: linear-gradient(to bottom, #9e005d, #eb008d);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+
+  background: #0a0a0a;
+  background-image: -webkit-linear-gradient(top, #0a0a0a, #666666);
+  background-image: -moz-linear-gradient(top, #0a0a0a, #666666);
+  background-image: -ms-linear-gradient(top, #0a0a0a, #666666);
+  background-image: -o-linear-gradient(top, #0a0a0a, #666666);
+  background-image: linear-gradient(to bottom, #0a0a0a, #666666);
+  text-decoration: none;
+}
+.lovelogo{
+ margin-top: -27px;
+ position: absolute;
+ top:10px;
+ left:110px;
+
+}
+#tagline{
+  position: absolute;
+  left:127px;
+  top:155px;
+}
+.btn{
+  position: absolute;
+  left:775px;
+  top:100px;
+  z-index: 50;
+}
+.socialmedia{
+  padding-top: 5px;
+  position: absolute;
+  left:920px;
+  margin-top: 5px; 
+}
+.facebook{
+  opacity: 0.6;
+}
+.facebook:hover{
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+
+}
+.twitter{
+  opacity: 0.6;
+}
+.twitter:hover{
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.email{
+  opacity: 0.6;
+}
+.email:hover{
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.youtube{
+  opacity: 0.6;
+}
+.youtube:hover{
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.contactinfo{
+  font-size: 75%;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  position:absolute;
+  left:75px;
+}
+section.summary{
+  position: absolute;
+  width: 300px;
+  font-size: 120%;
+  margin-left: 620px;
+  margin-top: 450px;
+  padding-left: 20px;
+  padding-bottom: 400px;
+  
+}
+.studio_img{
+box-shadow: 5px 5px 5px grey;
+  display: block;
+  position: absolute;
+  margin-top:175px;
+  margin-bottom: 300px;
+
+}
+
+}
+article.philosophy{
+  width:460px;
+}
+.policiebody{
+  width:720px;
+}
+.faq{
+  width: 720px;
+}
+
+.tobinsilks{
+  margin-top: -150px;
+}
+.tobin_silks{
+  position: absolute;
+  display: inline-block;
+  margin-bottom: 300px;
+  margin-top: -300px;
+  padding-bottom: 200px;
+
+}
+
+.price_summary{
+  width: 920px;
+  text-align: center;
+  padding-bottom:25px;
+  margin-top: -25px;
+}
+.pricelist {
+  width: 720px;
+  padding-left: 25px;
+}
+.private_price{
+  border-top: solid .5pt black; 
+  width: 960px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.membership_price{
+  border-bottom: solid .5pt black; 
+  padding-bottom: 25px;
+  border-top: solid .5pt black; 
+  width: 960px;
+  padding-top: 25px;
+}
+.package_policy {  
+  width: 920px;
+  text-align: center;
+  padding-top:25px;
+  padding-bottom: 25px;
+  }
+.package_info{
+  text-align: center;
+}
+
+.bioblurb{
+  width: 400px;
+}
+.polefitness_summary{
+  width: 920px;   
+  padding:10px;
+}
+.pole_levels{
+  width: 920px;
+  padding:10px;
+}
+ul .pole_levels{
+  list-style: circle;
+}
+.pole_levels{
+  padding-bottom: 25px;
+}
+.alternativepole{
+  max-width: 460px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.peeweepole{
+  width: 920px;
+}
+.gab_pole{
+  margin-left: 500px;
+  margin-top: -700px;
+}
+.lyra_describe{
+  width:460px;
+  margin-top: 60px;
+}
+.lyra{
+  margin-left: 500px;
+  margin-top: -210px;
+}
+.silks{
+  padding-top: 100px;
+  width:460px;
+  margin-left: 500px;
+}
+.bellydance{
+ margin-top: 50px;
+  padding-bottom: 200px;
+  position: absolute;
+  width: 460px;
+}
+.chair{
+  width: 460px;
+  position: absolute;
+  margin-top: -475px;
+}
+.flex{
+  width: 460px;
+  position: absolute;
+  margin-top: -275px;
+}
+.floorwork{
+  margin-top: 100px;
+  width: 460px; 
+  padding-bottom: 100px;
+
+}
+.yoga{
+  margin-top: -100px;
+  width: 460px;
+}
+.bellyimage{
+
+  margin-top: 100px;
+}
+.belly{
+  display: block;
+  /*margin-top: -100px; */
+  margin-left: 500px;
+}
+.party_sum{
+  width: 940px;
+}
+#party_list{
+  line-height: 25px;
+}
+.partyprice{
+  width: 460px;
+  padding-top: 60px;
+}
+.philosophy{
+  width: 920px;
+  position: absolute;
+}
+.studio_image2{
+  margin-left: 500px;
+  margin-top: -170px;
+  padding-bottom: 100px;
+}
+}
+.bio_content {
+  display: inline-block;
+  margin-top: -100px;
+}
+.tobin{
+  width:460px;
+}
+.tobin_pic{
+  margin-left: 500px;
+margin-top: -200px;
+padding-bottom: 50px;}
+.sierra{
+  width: 460px;
+  padding-bottom: 50px; 
+}
+.sierra_image{
+  margin-left: 500px;
+  margin-top: -400px;
+
+}
+.norma{
+  width: 460px;
+  padding-bottom: 50px;
+}
+.norma_bio{
+  margin-left: 500px;
+  margin-top: -350px;
+  padding-bottom: 25px;
+}
+.gab{
+  padding-bottom: 100px;
+}
+.christine{
+  width: 460px;
+}
+.christinepic{
+  margin-left: 500px;
+  margin-top: -440px;
+  padding-bottom: 50px;
+}
+.morgan{
+  width: 460px;
+}
+.morgan_dance{
+  margin-top: -170px;
+  margin-left: 500px;
+}
+.chelsea{
+  margin-top: 100px;
+  width: 460px;
+}
+.chelsea_yoga{
+  margin-left: 500px;
+  margin-top: -200px;
+  margin-bottom: 100px;
+}
+.lindsey{
+  width: 460px;
+}
+.linds_lyra{
+  margin-left: 500px;
+  margin-top: -450px;
+}
+.sara{
+  width: 460px;
+  margin-top: 150px;
+}
+.sara_pic{
+  margin-left: 500px;
+  margin-top: -300px;
+}
+.gab{
+  margin-top: 100px;
+  width: 460px;
+}
+.pole_pic{
+  padding-top:  25px;
+}
+.competition_winners2{
+  position: absolute;
+  display: inline-block;
+  padding-left: 20px;
+  margin-top: 0px;
+}
+.marrisa_pole1{
+display: inline-block;
+  padding-left: 20px;
+}
+.marrisa_pole4{
+  display: inline-block;
+  padding-left: 20px;}
+.gab_pole1{
+  display: inline-block;
+  padding-left: 20px;
+}
+.tobin_pole2{
+  display: inline-block;
+  position: relative;
+  margin-top: -100px;
+
+}
+.sierra_video{
+  padding-top: 50px;
+}
+.christine_video{
+  padding-top: 50px;
+}
+.gina_video{
+  padding-top: 50px;
+}
+.youtube_video { display: block;margin-left:150px; border:5px solid black; }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  font-family: Montserrat, sans-serif;
+  background: #000000;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 17px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#cssmenu > ul > li:hover > a {
+  color: #fdb1f8;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 30px;
+}
+#cssmenu > ul > li.has-sub > a:after {
+  position: absolute;
+  top: 22px;
+  right: 11px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  background: #ffffff;
+  content: '';
+}
+#cssmenu > ul > li.has-sub > a:before {
+  position: absolute;
+  top: 19px;
+  right: 14px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  background: #ffffff;
+  content: '';
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+  top: 23px;
+  height: 0;
+}
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+}
+#cssmenu.align-right ul ul {
+  text-align: right;
+}
+#cssmenu ul ul li {
+  height: 0;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+#cssmenu li:hover > ul {
+  left: auto;
+}
+#cssmenu.align-right li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu li:hover > ul > li {
+  height: 35px;
+}
+#cssmenu ul ul ul {
+  margin-left: 100%;
+  top: 0;
+}
+#cssmenu.align-right ul ul ul {
+  margin-left: 0;
+  margin-right: 100%;
+}
+#cssmenu ul ul li a {
+  border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+  padding: 11px 15px;
+  width: 170px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  background: #000000;
+}
+#cssmenu ul ul li:last-child > a,
+#cssmenu ul ul li.last-item > a {
+  border-bottom: 0;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li a:hover {
+  color: #fdb1f8;
+}
+#cssmenu ul ul li.has-sub > a:after {
+  position: absolute;
+  top: 16px;
+  right: 11px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  background: #ffffff;
+  content: '';
+}
+#cssmenu.align-right ul ul li.has-sub > a:after {
+  right: auto;
+  left: 11px;
+}
+#cssmenu ul ul li.has-sub > a:before {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  background: #ffffff;
+  content: '';
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+#cssmenu.align-right ul ul li.has-sub > a:before {
+  right: auto;
+  left: 14px;
+}
+#cssmenu ul ul > li.has-sub:hover > a:before {
+  top: 17px;
+  height: 0;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen ul {
+  width: 100%;
+  display: none;
+}
+#cssmenu.small-screen.align-center > ul {
+  text-align: left;
+}
+#cssmenu.small-screen ul li {
+  width: 100%;
+  border-top: 1px solid rgba(120, 120, 120, 0.2);
+}
+#cssmenu.small-screen ul ul li,
+#cssmenu.small-screen li:hover > ul > li {
+  height: auto;
+}
+#cssmenu.small-screen ul li a,
+#cssmenu.small-screen ul ul li a {
+  width: 100%;
+  border-bottom: 0;
+}
+#cssmenu.small-screen > ul > li {
+  float: none;
+}
+#cssmenu.small-screen ul ul li a {
+  padding-left: 25px;
+}
+#cssmenu.small-screen ul ul ul li a {
+  padding-left: 35px;
+}
+#cssmenu.small-screen ul ul li a {
+  color: #ffffff;
+  background: none;
+}
+#cssmenu.small-screen ul ul li:hover > a,
+#cssmenu.small-screen ul ul li.active > a {
+  color: #fdb1f8;
+}
+#cssmenu.small-screen ul ul,
+#cssmenu.small-screen ul ul ul,
+#cssmenu.small-screen.align-right ul ul {
+  position: relative;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+#cssmenu.small-screen > ul > li.has-sub > a:after,
+#cssmenu.small-screen > ul > li.has-sub > a:before,
+#cssmenu.small-screen ul ul > li.has-sub > a:after,
+#cssmenu.small-screen ul ul > li.has-sub > a:before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 17px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#cssmenu.small-screen #menu-button:after {
+  position: absolute;
+  top: 22px;
+  right: 17px;
+  display: block;
+  height: 4px;
+  width: 20px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  content: '';
+}
+#cssmenu.small-screen #menu-button:before {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  display: block;
+  height: 2px;
+  width: 20px;
+  background: #ffffff;
+  content: '';
+}
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  top: 23px;
+  border: 0;
+  height: 2px;
+  width: 15px;
+  background: #fdb1f8;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#cssmenu.small-screen #menu-button.menu-opened:before {
+  top: 23px;
+  background: #fdb1f8;
+  width: 15px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#cssmenu.small-screen .submenu-button {
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  top: 0;
+  display: block;
+  border-left: 1px solid rgba(120, 120, 120, 0.2);
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+}
+#cssmenu.small-screen .submenu-button.submenu-opened {
+  background: #000000;
+}
+#cssmenu.small-screen ul ul .submenu-button {
+  height: 34px;
+  width: 34px;
+}
+#cssmenu.small-screen .submenu-button:after {
+  position: absolute;
+  top: 22px;
+  right: 19px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  background: #ffffff;
+  content: '';
+}
+#cssmenu.small-screen ul ul .submenu-button:after {
+  top: 15px;
+  right: 13px;
+}
+#cssmenu.small-screen .submenu-button.submenu-opened:after {
+  background: #fdb1f8;
+}
+#cssmenu.small-screen .submenu-button:before {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  background: #ffffff;
+  content: '';
+}
+#cssmenu.small-screen ul ul .submenu-button:before {
+  top: 12px;
+  right: 16px;
+}
+#cssmenu.small-screen .submenu-button.submenu-opened:before {
+  display: none;
+}
+#cssmenu.small-screen.select-list {
+  padding: 5px;
+}
+#cssmenu{
+  position: absolute;
+  left:550px;
+  top:15px;
+  z-index: 10;}
+
+  h1{font-family: 'sacramento', cursive;
+  font-size: 300%;
+  width: 600px;
+  font-weight: lighter;
+  margin-top: 10px;
+  }
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  border-radius: 5px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background: #000000;
+  background: -o-linear-gradient(top, #1a1a1a, #000000);
+  background: -ms-linear-gradient(top, #1a1a1a, #000000);
+  background: -webkit-linear-gradient(top, #1a1a1a, #000000);
+  background: -moz-linear-gradient(top, #1a1a1a, #000000);
+  background: linear-gradient(to bottom, #1a1a1a, #000000);
+  box-shadow: inset 0 -3px 0 #000000, inset 0 -3px 3px #000000, inset 0 2px 2px #363636, inset 1px 0 2px #000000, inset -1px 0 2px #000000, 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 3px 3px rgba(0, 0, 0, 0.17), 2px 1px 2px rgba(0, 0, 0, 0.05), -2px 1px 2px rgba(0, 0, 0, 0.05);
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right ul ul {
+  text-align: right;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu > ul > li > a {
+  padding: 20px 25px;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.active > a {
+  color: #fdcaf2;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+#cssmenu ul > li.has-sub > a:after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 17.5px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background: #000000;
+  background: -webkit-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -ms-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -moz-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -o-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: linear-gradient(to bottom, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  box-shadow: inset 0 -1px 1px #000000, inset 0 2px 1px #262626;
+  background-size: 36px 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+#cssmenu ul > li.has-sub:hover > a:after {
+  background-position: 0 -18px;
+}
+#cssmenu ul > li.has-sub > a:before {
+  content: '';
+  position: absolute;
+  right: 11px;
+  top: 25.5px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  border-top-color: #ffffff;
+  z-index: 99;
+}
+#cssmenu ul > li.has-sub:hover > a:before {
+  border-top-color: #000000;
+}
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition: top .2s ease, opacity .2s ease;
+  -moz-transition: top .2s ease, opacity .2s ease;
+  -ms-transition: top .2s ease, opacity .2s ease;
+  -o-transition: top .2s ease, opacity .2s ease;
+  transition: top .2s ease, opacity .2s ease;
+}
+#cssmenu > ul > li > ul {
+  top: 91px;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+#cssmenu > ul > li:hover > ul {
+  left: auto;
+  top: 51px;
+  opacity: 1;
+}
+#cssmenu.align-right > ul > li:hover > ul {
+  right: 0;
+}
+#cssmenu ul ul ul {
+  top: 40px;
+}
+#cssmenu ul ul > li:hover > ul {
+  top: 0;
+  left: 178px;
+  padding-left: 10px;
+  opacity: 1;
+}
+#cssmenu.align-right ul ul > li:hover > ul {
+  left: auto;
+  right: 178px;
+  padding-left: 0;
+  padding-right: 10px;
+  opacity: 1;
+}
+#cssmenu ul ul li a {
+  width: 180px;
+  padding: 12px 25px;
+  font-size: 13px;
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-decoration: none;
+  background: #000000;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li > a:hover,
+#cssmenu ul ul li.active > a {
+  color: #fdcaf2;
+}
+#cssmenu ul ul li:first-child > a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: inset 0 2px 2px #2b2b2b;
+}
+#cssmenu ul ul li:last-child > a {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: inset 0 -3px 0 #000000, inset 0 -3px 3px #000000, 0 1px 1px rgba(0, 0, 0, 0.03), 0 2px 2px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.13);
+}
+#cssmenu ul ul > li.has-sub > a:after {
+  right: 12px;
+  top: 9.5px;
+  background: #000000;
+  background: -webkit-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -ms-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -moz-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -o-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: linear-gradient(to bottom, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  box-shadow: inset 0 -1px 1px #000000, inset 0 2px 1px #262626;
+  background-size: 36px 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+#cssmenu.align-right ul ul > li.has-sub > a:after {
+  right: auto;
+  left: 12px;
+}
+#cssmenu ul ul > li.has-sub:hover > a:after {
+  background-position: 0 -18px;
+}
+#cssmenu ul ul > li.has-sub > a:before {
+  top: 15.5px;
+  right: 16px;
+  border-top-color: transparent;
+  border-left-color: #ffffff;
+}
+#cssmenu.align-right ul ul > li.has-sub > a:before {
+  top: 15.5px;
+  right: auto;
+  left: 16px;
+  border-top-color: transparent;
+  border-right-color: #ffffff;
+  border-left-color: transparent;
+}
+#cssmenu ul ul > li.has-sub:hover > a:before {
+  border-top-color: transparent;
+  border-left-color: #000000;
+}
+#cssmenu.align-right ul ul > li.has-sub:hover > a:before {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: #000000;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen ul,
+#cssmenu.small-screen ul ul,
+#cssmenu.small-screen ul ul ul,
+#cssmenu.small-screen > ul,
+#cssmenu.small-screen.align-center > ul,
+#cssmenu.small-screen > ul > li > ul,
+#cssmenu.small-screen > ul > li:hover > ul,
+#cssmenu.small-screen ul ul li:hover > ul,
+#cssmenu.small-screen ul ul ul li:hover > ul,
+#cssmenu.small-screen.align-right ul ul,
+#cssmenu.small-screen.align-right ul ul li:hover > ul,
+#cssmenu.small-screen.align-right ul ul ul li:hover > ul {
+  position: relative;
+  left: 0;
+  right: auto;
+  top: 0;
+  width: 100%;
+  display: none;
+  padding: 0;
+  opacity: 1;
+  text-align: left;
+}
+#cssmenu.small-screen ul li {
+  width: 100%;
+  border-top: 1px solid rgba(120, 120, 120, 0.2);
+}
+#cssmenu.small-screen > ul > li > a,
+#cssmenu.small-screen ul ul li a,
+#cssmenu.small-screen ul ul li:first-child > a,
+#cssmenu.small-screen ul ul li:last-child > a {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+#cssmenu.small-screen ul li a {
+  padding-left: 12.5px;
+}
+#cssmenu.small-screen ul ul li a {
+  padding: 14px 25px 14px 27.5px;
+}
+#cssmenu.small-screen ul ul ul li a {
+  padding-left: 42.5px;
+}
+#cssmenu.small-screen ul ul ul ul li a {
+  padding-left: 57.5px;
+}
+#cssmenu.small-screen > ul > li.has-sub > a:after,
+#cssmenu.small-screen > ul > li.has-sub > a:before,
+#cssmenu.small-screen ul ul li.has-sub > a:after,
+#cssmenu.small-screen ul ul li.has-sub > a:before {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  position: relative;
+  display: block;
+  padding: 20px;
+  padding-left: 12.5px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#cssmenu.small-screen .submenu-button {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 53px;
+  height: 53px;
+  border-left: 1px solid rgba(120, 120, 120, 0.2);
+  z-index: 10;
+  cursor: pointer;
+}
+#cssmenu.small-screen ul ul .submenu-button {
+  height: 41px;
+}
+#cssmenu.small-screen ul .submenu-button:after,
+#cssmenu.small-screen #menu-button:after {
+  content: '';
+  position: absolute;
+  right: 12.5px;
+  top: 12.5px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 15px;
+  background: #000000;
+  background: -webkit-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -ms-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -moz-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: -o-linear-gradient(top, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  background: linear-gradient(to bottom, #0f0f0f 0%, #080808 25%, #000000 50%, #0f0f0f 75%, #080808 100%);
+  box-shadow: inset 0 -1px 1px #000000, inset 0 2px 1px #262626;
+  background-size: 56px 56px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+#cssmenu.small-screen ul .submenu-button.submenu-opened:after,
+#cssmenu.small-screen #menu-button.menu-opened:after {
+  background-position: 0 -28px;
+}
+#cssmenu.small-screen ul ul .submenu-button:after {
+  top: 6.5px;
+}
+#cssmenu.small-screen #menu-button:before,
+#cssmenu.small-screen .submenu-button:before {
+  content: '';
+  position: absolute;
+  right: 22.5px;
+  top: 25.5px;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  z-index: 99;
+}
+#cssmenu.small-screen ul ul .submenu-button:before {
+  top: 19.5px;
+}
+#cssmenu.small-screen #menu-button.menu-opened:before,
+#cssmenu.small-screen .submenu-button.submenu-opened:before {
+  border-top-color: #000000;
+}
+#cssmenu.small-screen.select-list {
+  padding: 5px;
+}
+*/
+
+
+/*saul added the two rules below
+#pole_img {
+	display: inline-block;
+	width: 325;
+	height: 300;
+	background-image: url(../assets/pole_button.png) ;
+}
+
+/*saul added the two rules below
+#pole_img {
+	display: inline-block;
+	width: 325;
+	height: 300;
+	background-image: url(../assets/pole_button.png) ;
+}
+#pole_img:hover {
+	width: 325;
+	height: 300;
+	background-image: url(../assets/pole_hover.png) ;	
+	cursor: pointer;
+}
