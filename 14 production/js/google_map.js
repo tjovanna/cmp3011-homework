@@ -1,6 +1,7 @@
 /**
  * Created by teeganjansen on 4/22/16.
  */
+
 //Make map & center on Davis Square
 var map;
 function initMap() {
@@ -13,12 +14,12 @@ function initMap() {
     var styles = [
         {
             stylers: [
-                { hue: "#D2DADC" },
-                { saturation: "-60"}
+                {hue: "#D2DADC"},
+                {saturation: "-60"}
             ]
         }
     ];
-    map.setOptions ({styles: styles});
+    map.setOptions({styles: styles});
 
 
 //Set results biased to Davis Square, set up autocomplete
@@ -28,22 +29,49 @@ function initMap() {
         new google.maps.LatLng(42.398884, -71.115353));
 
     var input = document.getElementById('searchTextField');
+    //var input = window.HTMLInputElement("input");
     var options = {
         bounds: defaultBounds
     };
 
     autocomplete = new google.maps.places.Autocomplete(input, options);
 
+//
 //Drawing circle with radius of 0.5 miles
-    var distance_circle = new google.maps.Circle({
-    strokeColor: '#FF0000',
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
-    fillColor: '#FF0000',
-    fillOpacity: 0.35,
-    map: map,
-    center: {lat: 42.396379, lng: -71.122309},
-    radius: 805
-});
-
+//    var distance_circle = new google.maps.Circle({
+//        strokeColor: '#FF0000',
+//        strokeOpacity: 0.8,
+//        strokeWeight: 2,
+//        fillColor: '#FF0000',
+//        fillOpacity: 0.35,
+//        map: map,
+//        center: {lat: 42.396379, lng: -71.122309},
+//        radius: 805
+//    });
+//
+////Turn user input (address) into LatLng
+//    var geocoder = new google.maps.Geocoder();
+//
+//    document.getElementById('search').addEventListener('click', function () {
+//        event.preventDefault();
+//        geocodeAddress(geocoder, map);
+//    });
+//}
+//function geocodeAddress() {
+//    var address = document.getElementById("address").value;
+//    geocoder.geocode({'address': address}, function (results, status) {
+//        if (status == google.maps.GeocoderStatus.OK) {
+//            map.setCenter(results[0].geometry.location);
+//            var marker = new google.maps.Marker({
+//                map: map,
+//                position: results[0].geometry.location
+//            });
+//        } else {
+//            alert("Geocode was not successful for the following reason: " + status);
+//        }
+//    });
 }
+//Submit button doesn't go anywhere
+//document.getElementById("search").addEventListener("click", function (event) {
+//    event.preventDefault()
+//});

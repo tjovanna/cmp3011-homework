@@ -1,7 +1,9 @@
-"bathrooms": [
+{"bathrooms": [
     {
       "name": "Diesel Café",
       "address": "257 Elm Street",
+      "lat": 42.395877,
+      "long": -71.121812,
       "hours": "6am-11pm, M-Su",
       "stalls": "single",
       "pay": false,
@@ -12,6 +14,8 @@
     {
       "name": "iYo Bistro",
       "address": "234 Elm Street",
+      "lat": 42.394942,
+      "long": -71.121796,
       "hours": "9am-11pm, M-Su",
       "stalls": "single",
       "pay": false,
@@ -23,6 +27,8 @@
     {
       "name": "Starbucks",
       "address": "260 Elm Street",
+      "lat": 42.395917,
+      "long": -71.122232,
       "hours": "5:30am-10:30pm, M-Su",
       "stalls": "single",
       "pay": true,
@@ -33,6 +39,8 @@
     {
       "name": "Flatbread Company",
       "address": "45 Day Street",
+      "lat": 42.395976,
+      "long": -71.123810,
       "hours": "11:30am-10pm, M-Su",
       "stalls": "multiple",
       "pay": false,
@@ -43,6 +51,8 @@
     {
       "name": "Five Horses Tavern",
       "address": "400 Highland Avenue",
+      "lat": 42.395819,
+      "long": -71.120830,
       "hours": "11am-1am, M-Su",
       "stalls": "multiple",
       "pay": false,
@@ -53,6 +63,8 @@
     {
       "name": "The Painted Burro",
       "address": "219 Elm Street",
+      "lat": 42.394784,
+      "long": -71.121095,
       "hours": "5pm-11pm, M-Su",
       "stalls": "multiple",
       "pay": false,
@@ -63,6 +75,8 @@
     {
       "name": "Rosebud American Kitchen & Bar",
       "address": "381 Summer Street",
+      "lat": 42.391571,
+      "long": -71.114579,
       "hours": "11:30am-12am, M-Su",
       "stalls": "multiple",
       "pay": false,
@@ -72,6 +86,8 @@
     {
       "name": "The Burren",
       "address": "247 Elm Street",
+      "lat": 42.395632,
+      "long": -71.121795,
       "hours": "11:30am-2am, M-Su",
       "stalls": "multiple",
       "pay": false,
@@ -82,6 +98,8 @@
     {
       "name": "Mr. Crepe",
       "address": "51 Davis Square",
+      "lat": 42.396948,
+      "long": -71.123037,
       "hours": "7am-10pm, M-Su",
       "stalls": "single",
       "pay": true,
@@ -91,7 +109,9 @@
 
     {
       "name": "Boston Burger Company",
-      "address": "257 Elm Street",
+      "address": "37 Davis Square",
+      "lat": 42.397175,
+      "long": -71.122545,
       "hours": "11am-11pm, M-Su",
       "stalls": "multiple",
       "pay": true,
