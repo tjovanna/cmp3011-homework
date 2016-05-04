@@ -18,7 +18,15 @@
             <br>
             <input type="submit" id="search" value="Search">
         </form>
-    <div id="content"></div>
+
+        <form id="filters">
+            <input type="checkbox" value="pay" id="pay"><label for="pay"></label>
+            <input type="checkbox" value="multiple" id="multiple"><label for="multiple"></label>
+            <input type="checkbox" value="single" id="single"><label for="single"></label>
+        </form>
+
+        <div id="content"></div>
+
     <script src="js/google_map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRFVs1axoLZ8DOD1CLWo4St0J0lAVxXXM&callback=initMap&libraries=places" async defer></script>
 

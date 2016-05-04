@@ -95,6 +95,27 @@ input[type=button], input[type=submit] {
     background-color: rgba(210,218,220, 0.4);
 }
 
+/*FILTERS STYLES*/
+input[type=checkbox] {
+    display:none;
+}
+
+input[type=checkbox] + label[for=multiple] {
+    background: url("images/multiplestalls.png");
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+
+input[type=checkbox]:checked + label {
+    background: #0080FF;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+
 /*RESULTS STYLES*/
 .result_info {
     margin: -2em 1em;
