@@ -64,7 +64,7 @@ function initMap() {
 
 
         //fade in list of results
-        $('ul').hide().fadeIn(1500);
+        $('ol').hide().fadeIn(1500);
 
 
 
@@ -142,20 +142,20 @@ function initMap() {
 
 
         //load results from json file
-    //    var xhr = new XMLHttpRequest();
-    //    responseObject = JSON.parse(xhr.responseText);
-    //    var newContent = '';
-    //    for(var i=0; i < responseObject.bathrooms.length; i++){
-    //        newContent += '<div class="result">';
-    //        newContent += '<h2>'+responseObject.bathrooms[i].name+ '</h2>';
-    //        newContent += '<h3>'+ responseObject.bathrooms[i].address+ '<br>';
-    //        newContent += responseObject.bathrooms[i].hours + '</h3>';
-    //        newContent += '<p>' +responseObject.bathrooms[i].description +'</p>';
-    //        newContent += '</div>';
-    //    }
-    //    document.getElementById('content').innerHTML = newContent;
-    //    xhr.open('GET', '../bathrooms.json', true);
-    //    xhr.send(null);
+        //var xhr = new XMLHttpRequest();
+        //responseObject = JSON.parse(xhr.responseText);
+        //var newContent = '';
+        //for(var i=0; i < responseObject.bathrooms.length; i++){
+        //    newContent += '<div class="result">';
+        //    newContent += '<h2>'+responseObject.bathrooms[i].name+ '</h2>';
+        //    newContent += '<h3>'+ responseObject.bathrooms[i].address+ '<br>';
+        //    newContent += responseObject.bathrooms[i].hours + '</h3>';
+        //    newContent += '<p>' +responseObject.bathrooms[i].description +'</p>';
+        //    newContent += '</div>';
+        //}
+        //document.getElementById('content').innerHTML = newContent;
+        //xhr.open('GET', '../bathrooms.json', true);
+        //xhr.send(null);
 
 
 

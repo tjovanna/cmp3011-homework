@@ -21,6 +21,7 @@
 body {
     background-color: rgba(220, 240, 233, 0.2);
     color: #0A3A54;
+    counter-reset: item;
 }
 /*Header styles*/
 header {
@@ -117,16 +118,34 @@ input[type=checkbox]:checked + label {
 }
 
 /*RESULTS STYLES*/
-ul {
+ol {
     display: none;
-}
-ul li {
-    margin: 2em 1em;
     list-style: none;
 }
-li a{
+li {
+    counter-increment: item;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+}
+li:before {
+    margin: 2em 0;
+    content: counter(item);
+    /*background: rgba(210,218,220, 0.4);*/
+    /*border-radius: 100%;*/
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+li a {
+    width: 70%;
+    margin: 2em 1em;
     text-decoration: none;
     color: #0A3A54;
+    float: right;
 }
 li a:hover {
     color: #DCF0E9
