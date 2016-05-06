@@ -90,9 +90,9 @@ function initMap() {
 
 
             //Reorder the list
-            locations.innerHTML = "";
-            locationArray.forEach(function(el) {
-                locations.appendChild(el);
+            bathrooms.innerHTML = "";
+            bathroomArray.forEach(function() {
+                bathrooms.appendChild();
                 console.log('did this too');
             }); }
 
