@@ -51,7 +51,10 @@ function initMap() {
 //        center: {lat: 42.396379, lng: -71.122309},
 //        radius: 805
 //    });
-//
+
+
+
+
 // On click, call function to geocode user's address and load database results (no filters)
 //    var geocoder = new google.maps.Geocoder();
 
@@ -59,23 +62,109 @@ function initMap() {
         event.preventDefault();
         geocodeAddress(geocoder, map);
 
+
+        //fade in list of results
+        $('ul').hide().fadeIn(1500);
+
+
+
+
+       //Geosort results- by distance from user input
+        function sortResults () {
+            // Grab current position
+            var latlon = LatLon(locLat, locLng)
+
+            var bathrooms = document.getElementById('bathrooms');
+            var bathroomList = bathrooms.querySelectorAll('li');
+            var bathroomArray = Array.prototype.slice.call(bathroomList, 0);
+
+            bathroomArray.sort(function(a,b){
+                var locA  = a.getAttribute('data-latlon').split(',');
+                var locB  = b.getAttribute('data-latlon').split(',');
+                console.log('did this');
+
+                distA = latlon.distanceTo(new LatLon(Number(locA[0]),Number(locA[1])));
+                distB = latlon.distanceTo(new LatLon(Number(locB[0]),Number(locB[1])));
+                return distA - distB;
+            });
+
+
+            //Reorder the list
+            locations.innerHTML = "";
+            locationArray.forEach(function(el) {
+                locations.appendChild(el);
+                console.log('did this too');
+            }); }
+
+
+        //make numbered markers
+            var coords = [
+                {
+                    "name": "Diesel Café",
+                    "lat": 42.395877,
+                    "long": -71.121812
+                },
+                {
+                    "name": "iYo Bistro",
+                    "lat": 42.394942,
+                    "long": -71.121796
+                },
+                {
+                    "name": "Starbucks",
+                    "lat": 42.395917,
+                    "long": -71.122232
+                },
+                {
+                    "name": "Flatbread Company",
+                    "lat": 42.395976,
+                    "long": -71.123810
+                },
+                {
+                    "name": "Five Horses",
+                    "lat": 42.395819,
+                    "long": -71.120830
+                },
+                {
+                    "name": "Rosebud",
+                    "lat": 42.391571,
+                    "long": -71.114579
+                }
+            ];
+        for(var i = 0; i < coords.length; i++) {
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(coords[i].lat, coords[i].long),
+                map: map,
+                title: coords[i].name,
+                icon:  "https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld=" + (i + 1) + "|FFFFFF|000000"
+            });
+
+
+
+
         //load results from json file
-        var xhr = new XMLHttpRequest();
-        responseObject = JSON.parse(xhr.responseText);
-        var newContent = '';
-        for(var i=0; i < responseObject.bathrooms.length; i++){
-            newContent += '<div class="result">';
-            newContent += '<h2>'+responseObject.bathrooms[i].name+ '</h2>';
-            newContent += '<h3>'+ responseObject.bathrooms[i].address+ '<br>';
-            newContent += responseObject.bathrooms[i].hours + '</h3>';
-            newContent += '<p>' +responseObject.bathrooms[i].description +'</p>';
-            newContent += '</div>';
-        }
-        document.getElementById('content').innerHTML = newContent;
-        xhr.open('GET', '../bathrooms.json', true);
-        xhr.send(null);
-    });
-}
+    //    var xhr = new XMLHttpRequest();
+    //    responseObject = JSON.parse(xhr.responseText);
+    //    var newContent = '';
+    //    for(var i=0; i < responseObject.bathrooms.length; i++){
+    //        newContent += '<div class="result">';
+    //        newContent += '<h2>'+responseObject.bathrooms[i].name+ '</h2>';
+    //        newContent += '<h3>'+ responseObject.bathrooms[i].address+ '<br>';
+    //        newContent += responseObject.bathrooms[i].hours + '</h3>';
+    //        newContent += '<p>' +responseObject.bathrooms[i].description +'</p>';
+    //        newContent += '</div>';
+    //    }
+    //    document.getElementById('content').innerHTML = newContent;
+    //    xhr.open('GET', '../bathrooms.json', true);
+    //    xhr.send(null);
+
+
+
+
+}});}
+
+
+
+
 
 //Grab user's longitude and latitude and place a 'you are here' marker
 var locLat;
@@ -98,11 +187,12 @@ function geocodeAddress() {
             locLng = results[0].geometry.location.lng();
             console.log(locLat);
             console.log(locLng);
+
         } else {
             alert("Geocode was not successful for the following reason: " + status);
         }
+
     });
 }
 
-//Get distance between user location and database results
 
