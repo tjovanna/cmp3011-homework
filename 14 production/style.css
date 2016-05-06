@@ -95,6 +95,11 @@ input[type=button], input[type=submit] {
     cursor: pointer;
     background-color: rgba(210,218,220, 0.4);
 }
+input.resultPageSearch {
+    width: 15%;
+    margin: 0 1em;
+    font-size: 1em;
+}
 
 /*FILTERS STYLES*/
 input[type=checkbox] {
@@ -167,29 +172,34 @@ li p {
     width: 100%;
 }
 
-#result {
+.result {
     margin: -2em 1em;
 }
-#business_info {
+.business_info {
     float: left;
     width: 60%;
+    font-family: "Josefin Sans", sans-serif;
 }
-#side_info {
+.side_info {
     float: right;
     height: 20em;
     width: 40%
 }
-#description {
+.description {
     font-family: "Playfair Display", serif;
     font-size: 0.85em;
     /*margin: 1em auto;*/
     width: 60%;
 }
-#description p {
-    margin-right: 0.5em;
+.description p {
+    margin-right: 0.75em;
 }
 
-/*#result_img {*/
-    /*width: 8em;*/
-    /*margin: 0.5em auto;*/
-/*}*/
+.result_img {
+    /*height: 100px;*/
+     width: 150px;
+     margin: 0.5em auto;
+ }
+.filter_img{
+    height: 50px;
+}

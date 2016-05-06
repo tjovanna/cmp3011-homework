@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>iYo Bistro | Urgent Business</title>
+</head>
+<body>
+<header>
+    <h1><a href="index.html">URGENT BUSINESS</a></h1>
+</header>
+<form>
+    <input id="searchTextField" type="text" name="address" placeholder="Enter address...">
+    <input type="submit" class="resultPageSearch" id="search" value="Search">
+</form>
+<div id="map">
+    <script>
+        function initMap() {
+            geocoder = new google.maps.Geocoder();
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 42.395877, lng: -71.121812},
+                zoom: 16
+            });
+            var marker= new google.maps.Marker({
+                map: map,
+                position: {lat: 42.394942, lng: -71.121796}
+            });
+            ////Set new styles
+            var styles = [
+                {
+                    stylers: [
+                        {hue: "#D2DADC"},
+                        {saturation: "-60"}
+                    ]}];
+            map.setOptions({styles: styles});}
+
+    </script>
+</div>
+<div class="result_info">
+    <div class="business_info">
+        <h2>iYo Bistro</h2>
+        <p class="address_hours">
+            9am-11pm, M-Su
+            <br>
+            234 Elm Street
+        </p>
+    </div>
+    <div class="side_info">
+        <img class="result_img" src="images/iyo.jpg">
+        <img class="filter_img" src="images/singlestall.png">
+    </div>
+    <div class="description">
+        <p>iYo Bistro was recently remodeled and its bathrooms are cleaner than ever. It isn’t too busy
+            (with most people hanging out to do work), but the self-serve fro-yo is in the back near the
+            bathrooms and no one will suspect a thing if the first thing you do is make a beeline for
+            the back.
+        </p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRFVs1axoLZ8DOD1CLWo4St0J0lAVxXXM&callback=initMap&libraries=places" async defer></script>
+
+</body>

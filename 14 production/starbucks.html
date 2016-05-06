@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Starbucks | Urgent Business</title>
+</head>
+<body>
+<header>
+    <h1><a href="index.html">URGENT BUSINESS</a></h1>
+</header>
+<form>
+    <input id="searchTextField" type="text" name="address" placeholder="Enter address...">
+    <input type="submit" class="resultPageSearch" id="search" value="Search">
+</form>
+<div id="map">
+    <script>
+        function initMap() {
+            geocoder = new google.maps.Geocoder();
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 42.395917, lng: -71.122232},
+                zoom: 16
+            });
+            var marker= new google.maps.Marker({
+                map: map,
+                position: {lat: 42.395917, lng: -71.122232}
+            });
+            ////Set new styles
+            var styles = [
+                {
+                    stylers: [
+                        {hue: "#D2DADC"},
+                        {saturation: "-60"}
+                    ]}];
+            map.setOptions({styles: styles});}
+
+    </script>
+</div>
+<div class="result_info">
+    <div class="business_info">
+        <h2>Starbucks</h2>
+        <p class="address_hours">
+            5:30am-10:30pm, M-Su
+            <br>
+            260 Elm Street
+        </p>
+    </div>
+    <div class="side_info">
+        <img class="result_img" src="images/starbucks.jpg">
+        <img class="filter_img" src="images/pay.png">
+        <img class="filter_img" src="images/singlestall.png">
+    </div>
+    <div class="description">
+        <p>Starbucks isn’t known for having the cleanest or freest bathrooms, and this one is no
+            exception. You may have to buy a coffee for the code just to wade through toilet paper
+            strewn about the floor, but you won’t find a place open earlier.
+
+        </p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRFVs1axoLZ8DOD1CLWo4St0J0lAVxXXM&callback=initMap&libraries=places" async defer></script>
+
+</body>
