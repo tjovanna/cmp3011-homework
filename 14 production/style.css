@@ -100,49 +100,49 @@ input[type=checkbox] {
     display:none;
 }
 
-input[type=checkbox] + label[for=multiple] {
+input[type=checkbox] + label {
     background: url("images/multiplestalls.png");
-    height: 16px;
-    width: 16px;
+    height: 200px;
+    width: 200px;
     display:inline-block;
     padding: 0 0 0 0px;
 }
 
 input[type=checkbox]:checked + label {
     background: #0080FF;
-    height: 16px;
-    width: 16px;
+    /*height: 16px;*/
+    /*width: 16px;*/
     display:inline-block;
     padding: 0 0 0 0px;
 }
 
 /*RESULTS STYLES*/
-.result_info {
+#result {
     margin: -2em 1em;
 }
-h2, .address_hours {
+h2, #address_hours {
     font-family: "Josefin Sans", sans-serif;
 }
-.business_info {
+#business_info {
     float: left;
     width: 60%;
 }
-.side_info {
+#side_info {
     float: right;
     height: 20em;
     width: 40%
 }
-.description {
+#description {
     font-family: "Playfair Display", serif;
     font-size: 0.85em;
     /*margin: 1em auto;*/
     width: 60%;
 }
-.description p {
+#description p {
     margin-right: 0.5em;
 }
 
-.result_img {
-    width: 8em;
-    margin: 0.5em auto;
-}
+/*#result_img {*/
+    /*width: 8em;*/
+    /*margin: 0.5em auto;*/
+/*}*/
