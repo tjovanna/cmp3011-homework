@@ -1,0 +1,122 @@
+{"bathrooms": [
+    {
+      "name": "Diesel Café",
+      "address": "257 Elm Street",
+      "lat": 42.395877,
+      "long": -71.121812,
+      "hours": "6am-11pm, M-Su",
+      "stalls": "single",
+      "pay": false,
+      "image": "images/diesel.jpg",
+      "description": "Past the counter and toward the pool table, Diesel Café has 2 single stall bathrooms. It seems like these bathrooms get a fair amount of traffic. While they aren’t the cleanest in town, they’re also not disgusting. Staff doesn’t bat an eye if you waltz past the counter, and you don’t need a key to get in. "
+    },
+
+    {
+      "name": "iYo Bistro",
+      "address": "234 Elm Street",
+      "lat": 42.394942,
+      "long": -71.121796,
+      "hours": "9am-11pm, M-Su",
+      "stalls": "single",
+      "pay": false,
+      "image": "images/iyo.jpg",
+      "description": "iYo Bistro was recently remodeled and its bathrooms are cleaner than ever. It isn’t too busy (with most people hanging out to do work), but the self-serve fro-yo is in the back near the bathrooms and no one will suspect a thing if the first thing you do is make a beeline for the back."
+    },
+
+
+    {
+      "name": "Starbucks",
+      "address": "260 Elm Street",
+      "lat": 42.395917,
+      "long": -71.122232,
+      "hours": "5:30am-10:30pm, M-Su",
+      "stalls": "single",
+      "pay": true,
+      "image": "images/starbucks.jpg",
+      "description": "Starbucks isn’t known for having the cleanest or freest bathrooms, and this one is no exception. You may have to buy a coffee for the code just to wade through toilet paper strewn about the floor, but you won’t find a place open earlier."
+    },
+
+    {
+      "name": "Flatbread Company",
+      "address": "45 Day Street",
+      "lat": 42.395976,
+      "long": -71.123810,
+      "hours": "11:30am-10pm, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/flatbread.jpg",
+      "description": "Flatbread Company does a pretty good job of keeping their bathrooms clean. If you have a large group of people in need of some relief, the multiple-stalled bathrooms make this the spot for you. The friendly staff are happy to point you to the bathroom most days. If anyone gives you a hard time, you can always say you’re there for bowling."
+    },
+
+    {
+      "name": "Five Horses Tavern",
+      "address": "400 Highland Avenue",
+      "lat": 42.395819,
+      "long": -71.120830,
+      "hours": "11am-1am, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/fivehorses.jpg",
+      "description": "By day a family restaurant, by night a bustling sports bar: the ease of access to Five Horses largely depends on the time of day. At night, you’ll have no problem slipping in for free if you’re over 21, but you may have to shove your way through a crowd. During lunch, it’s going to be difficult to get access without asking for a table. (Our tip? Ask for a seat at the bar.) "
+    },
+
+    {
+      "name": "The Painted Burro",
+      "address": "219 Elm Street",
+      "lat": 42.394784,
+      "long": -71.121095,
+      "hours": "5pm-11pm, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/paintedburro.jpg",
+      "description": "You’re not going to get to the bathrooms here without talking to the host/hostess. We suggest telling them you’ll be at the bar. It’s often a younger crowd here, so this one may be a bit harder to pull off if you have children with you."
+    },
+
+    {
+      "name": "Rosebud American Kitchen & Bar",
+      "address": "381 Summer Street",
+      "lat": 42.391571,
+      "long": -71.114579,
+      "hours": "11:30am-12am, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/rosebud.jpg",
+      "description": "This one is super easy, and the bathrooms are pretty nice. There’s usually a lot going on at the Rosebud, so all you have to do is confidently walk back to the bathrooms and no one will question you. They’re too busy."
+    },
+    {
+      "name": "The Burren",
+      "address": "247 Elm Street",
+      "lat": 42.395632,
+      "long": -71.121795,
+      "hours": "11:30am-2am, M-Su",
+      "stalls": "multiple",
+      "pay": false,
+      "image": "images/burren.jpg",
+      "description": "During the day, the Burren is a nice little family restaurant that will happily let you use the bathrooms without a hassle. The bathrooms are fine for a pub, but you won’t find much clean space to change a diaper. By night, this establishment turns into one of Davis Square’s most popular bars/music venues. If there is music playing, you’ll have to show an ID and pay a cover (usually around $5) to get in."
+    },
+
+    {
+      "name": "Mr. Crepe",
+      "address": "51 Davis Square",
+      "lat": 42.396948,
+      "long": -71.123037,
+      "hours": "7am-10pm, M-Su",
+      "stalls": "single",
+      "pay": true,
+      "image": "images/mrcrepe.jpg",
+      "description": "Mr. Crepe is a nice little creperie/café in the heart of Davis Square. The counter faces you right as you walk in. Ask the staff for the key, and they may tell you it’s for customers only. A quick purchase of a bottle of water will open the bathroom gates for you. It’s important to hydrate anyway!"
+    },
+
+    {
+      "name": "Boston Burger Company",
+      "address": "37 Davis Square",
+      "lat": 42.397175,
+      "long": -71.122545,
+      "hours": "11am-11pm, M-Su",
+      "stalls": "multiple",
+      "pay": true,
+      "image": "images/bostonburger.jpg",
+      "description": "This particular Boston Burger Company location is pretty small, with the door leading right up to the host/hostess stand. You probably won’t be able to gain access to the bathrooms here without getting a table or a burger to go."
+    }
+  ]
+}
